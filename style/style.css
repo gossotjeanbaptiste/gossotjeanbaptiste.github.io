@@ -39,6 +39,12 @@ h1 {
     align-items: center;
 }
 
+.social img {
+    width: 32px;
+    height: 32px;
+    margin: 10px 0;
+}
+
 .name {
     margin: 0;
     padding: 0;
