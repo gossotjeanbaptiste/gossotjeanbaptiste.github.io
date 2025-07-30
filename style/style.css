@@ -57,8 +57,9 @@ h1 {
 
 .whoami {
     margin: 0;
-    padding: 0;
-    height: 65vh;
+    padding: 20px;
+    height: auto;
+    min-height: 65vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,10 +75,36 @@ h1 {
     animation: spanFadeIn cubic-bezier(.08,.74,.86,1) 1s;
 }
 
-.contributions {
+.about-me {
+    margin-top: 30px;
+    max-width: 700px;
+    padding: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.about-me h3 {
+    margin: 0 0 15px 0;
+    color: #ffffff;
+    font-size: 1.8em;
+    font-weight: 300;
+}
+
+.about-me p {
     margin: 0;
-    padding: 0;
-    height: 25vh;
+    color: #ffffff;
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.contributions {
+    margin: 20px 0 0 0;
+    padding: 20px;
+    height: auto;
+    min-height: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
