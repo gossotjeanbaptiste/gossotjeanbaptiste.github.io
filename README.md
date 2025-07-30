@@ -146,5 +146,5 @@ This portfolio was created to:
 
 ---
 
-Développé avec ❤️ par Jean-Baptiste GOSSOT
+Développé avec ❤️ par Jean-Baptiste (POGGIO) GOSSOT
 © Copyright 2021-2029 JustWirelessInc. All rights reserved.
