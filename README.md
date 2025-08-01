@@ -8,22 +8,29 @@ Ce portfolio est une vitrine de mes compétences et de mon parcours dans le dév
 
 - 👋 Une présentation personnelle
 - 📊 Mes contributions GitHub (publiques et privées)
-- 🔗 Mes liens professionnels (LinkedIn, GitHub, CV)
+- � Showcase interactif de mes projets avec navigation par onglets
+- 🔗 Liens directs vers les repositories GitHub de chaque projet
+- �🔗 Mes liens professionnels (LinkedIn, GitHub, CV)
 - 🌍 Version bilingue (Français/Anglais)
 
 ## 🛠️ Technologies utilisées
 
-- **HTML5** - Structure sémantique
-- **CSS3** - Styles modernes avec dégradés et animations
-- **SVG** - Icônes vectorielles pour les drapeaux
+- **HTML5** - Structure sémantique avec navigation par onglets
+- **CSS3** - Styles modernes avec dégradés, animations et design responsive
+- **JavaScript** - Interactivité pour la navigation des projets et adaptations responsive
+- **SVG** - Icônes vectorielles pour les drapeaux et liens sociaux
 - **GitHub Pages** - Hébergement
 
 ## ✨ Fonctionnalités
 
-- 🎨 Design moderne avec dégradé de couleurs
+- 🎨 Design moderne avec dégradé de couleurs et effet glassmorphism
 - 🌐 Navigation bilingue (FR/EN)
-- ⚡ Animations CSS fluides
+- ⚡ Animations CSS fluides et optimisées pour le confort utilisateur
 - 📈 Intégration des contributions GitHub
+- 🗂️ Système de projets interactifs avec navigation par onglets
+- 🔗 Liens directs vers les repositories GitHub de chaque projet
+- 📱 Design entièrement responsive (mobile, tablette, desktop)
+- 🖼️ Galerie d'images optimisée pour chaque projet
 - 🔗 Liens directs vers mes profils professionnels
 
 ## 🌍 Versions linguistiques
@@ -39,12 +46,22 @@ Ce portfolio est une vitrine de mes compétences et de mon parcours dans le dév
 ├── 📁 pages/
 │   └── 📄 english.html        # Version anglaise
 ├── 📁 style/
-│   └── 🎨 style.css          # Feuilles de style
+│   └── 🎨 style.css          # Feuilles de style responsive
+├── 📁 script/
+│   └── ⚡ script.js          # JavaScript pour interactivité
 ├── 📁 images/
 │   ├── 🖼️ avatar.png         # Photo de profil
 │   ├── 🇫🇷 FR.svg            # Drapeau français
 │   ├── 🇬🇧 USUK.svg          # Drapeau anglais
-│   └── 🔗 *_ico.svg/*.png        # Icônes sociales
+│   ├── 🔗 *_ico.svg/*.png        # Icônes sociales
+│   ├── 🖼️ dm_web.png         # Capture DM Web
+│   ├── 🖼️ my_hunter.jpg      # Capture MyHunter
+│   ├── 🖼️ organized.png      # Capture Organized
+│   ├── 🖼️ wolf3D.jpg         # Capture Wolf3D
+│   ├── 🖼️ errorpng.png      # image erreur
+│   └── 🖼️ portfolio.png      # Capture Portfolio
+├── 📁 fonts/
+│   └── 🔤 BitcountPropSingle-Light.ttf # Police personnalisée
 ├── 📁 icon/
 │   └── 🌟 portfolio_ico.png           # Favicon
 └── 📖 README.md              # Ce fichier
@@ -54,10 +71,12 @@ Ce portfolio est une vitrine de mes compétences et de mon parcours dans le dév
 
 Ce portfolio a été créé pour :
 
-- Présenter mon profil professionnel
-- Démontrer mes compétences en développement web
+- Présenter mon profil professionnel et mes compétences techniques
+- Démontrer mes compétences en développement web (HTML, CSS, JavaScript)
+- Showcaser mes projets de programmation avec détails techniques
 - Centraliser mes liens et informations importantes
-- Offrir une expérience utilisateur moderne et engageante
+- Offrir une expérience utilisateur moderne, responsive et engageante
+- Mettre en avant ma progression et mes contributions GitHub
 
 ## 📞 Contact
 
@@ -83,22 +102,29 @@ This portfolio is a showcase of my skills and journey in software development. I
 
 - 👋 Personal introduction
 - 📊 My GitHub contributions (public and private)
-- 🔗 My professional links (LinkedIn, GitHub, CV)
+- � Interactive project showcase with tab navigation
+- 🔗 Direct links to GitHub repositories for each project
+- �🔗 My professional links (LinkedIn, GitHub, CV)
 - 🌍 Bilingual version (French/English)
 
 ### 🛠️ Technologies Used
 
-- **HTML5** - Semantic structure
-- **CSS3** - Modern styles with gradients and animations
-- **SVG** - Vector icons for flags
+- **HTML5** - Semantic structure with tab navigation
+- **CSS3** - Modern styles with gradients, animations, and responsive design
+- **JavaScript** - Interactivity for project navigation and responsive adaptations
+- **SVG** - Vector icons for flags and social links
 - **GitHub Pages** - Hosting
 
 ### ✨ Features
 
-- 🎨 Modern design with color gradients
+- 🎨 Modern design with color gradients and glassmorphism effects
 - 🌐 Bilingual navigation (FR/EN)
-- ⚡ Smooth CSS animations
+- ⚡ Smooth CSS animations optimized for user comfort
 - 📈 GitHub contributions integration
+- 🗂️ Interactive project system with tab navigation
+- 🔗 Direct links to GitHub repositories for each project
+- 📱 Fully responsive design (mobile, tablet, desktop)
+- 🖼️ Optimized image gallery for each project
 - 🔗 Direct links to my professional profiles
 
 ### 🌍 Language Versions
@@ -114,12 +140,22 @@ This portfolio is a showcase of my skills and journey in software development. I
 ├── 📁 pages/
 │   └── 📄 english.html        # English version
 ├── 📁 style/
-│   └── 🎨 style.css          # Stylesheets
+│   └── 🎨 style.css          # Responsive stylesheets
+├── 📁 script/
+│   └── ⚡ script.js          # JavaScript for interactivity
 ├── 📁 images/
 │   ├── 🖼️ avatar.png         # Profile picture
 │   ├── 🇫🇷 FR.svg            # French flag
 │   ├── 🇬🇧 USUK.svg          # English flag
-│   └── 🔗 *_ico.svg/.png        # Social icons
+│   ├── 🔗 *_ico.svg/.png        # Social icons
+│   ├── 🖼️ dm_web.png         # DM Web screenshot
+│   ├── 🖼️ my_hunter.jpg      # MyHunter screenshot
+│   ├── 🖼️ organized.png      # Organized screenshot
+│   ├── 🖼️ wolf3D.jpg         # Wolf3D screenshot
+│   ├── 🖼️ errorpng.png      # image error
+│   └── 🖼️ portfolio.png      # Portfolio screenshot
+├── 📁 fonts/
+│   └── 🔤 BitcountPropSingle-Light.ttf # Custom font
 ├── 📁 icon/
 │   └── 🌟 portfolio_ico.png           # Favicon
 └── 📖 README.md              # This file
@@ -129,10 +165,12 @@ This portfolio is a showcase of my skills and journey in software development. I
 
 This portfolio was created to:
 
-- Present my professional profile
-- Demonstrate my web development skills
+- Present my professional profile and technical skills
+- Demonstrate my web development skills (HTML, CSS, JavaScript)
+- Showcase my programming projects with technical details
 - Centralize my links and important information
-- Provide a modern and engaging user experience
+- Provide a modern, responsive and engaging user experience
+- Highlight my progress and GitHub contributions
 
 ### 📞 Contact Information
 

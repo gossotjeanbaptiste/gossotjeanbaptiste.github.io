@@ -109,5 +109,75 @@ document.addEventListener('DOMContentLoaded', () => {
     adaptContributionsIframe();
     handleExtremeWidths();
     handleSocialBar();
+    initProjectTabs();
+    
+    // Déclencher l'animation de la section projets après un délai
+    setTimeout(() => {
+        const projectsSection = document.querySelector('.projects');
+        if (projectsSection) {
+            projectsSection.classList.add('visible');
+        }
+    }, 1000);
+    
     //debugScreenSize(); // À supprimer en production
 });
+
+// Fonctions pour la gestion des onglets de projets
+function initProjectTabs() {
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const projectPanels = document.querySelectorAll('.project-panel');
+    
+    // Ajouter les événements de clic sur les boutons d'onglets
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const projectId = button.getAttribute('data-project');
+            switchProject(projectId);
+        });
+    });
+    
+    // Afficher le premier projet par défaut
+    showProject('DM_Web');
+}
+
+function switchProject(projectId) {
+    // Retirer la classe active de tous les boutons
+    document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+    
+    // Ajouter la classe active au bouton cliqué
+    document.querySelector(`[data-project="${projectId}"]`).classList.add('active');
+    
+    // Transition entre les panneaux
+    const allPanels = document.querySelectorAll('.project-panel');
+    const targetPanel = document.getElementById(projectId);
+    
+    // Masquer tous les panneaux
+    allPanels.forEach(panel => panel.classList.remove('active'));
+    
+    // Afficher le panneau cible immédiatement
+    if (targetPanel) {
+        targetPanel.classList.add('active');
+    }
+}
+
+function showProject(projectId) {
+    const targetPanel = document.getElementById(projectId);
+    if (targetPanel) {
+        targetPanel.classList.add('active');
+    }
+}
+
+// Fonction pour animer l'apparition des projets au scroll (optionnel)
+function handleProjectVisibility() {
+    const projectsSection = document.querySelector('.projects');
+    if (projectsSection) {
+        const rect = projectsSection.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+        
+        if (isVisible) {
+            projectsSection.classList.add('visible');
+        }
+    }
+}
+
+// Écouter le scroll pour les animations (optionnel)
+window.addEventListener('scroll', handleProjectVisibility);

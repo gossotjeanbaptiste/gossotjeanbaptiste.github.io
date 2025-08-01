@@ -46,6 +46,18 @@ h1 {
     margin: 10px 0;
 }
 
+.social img[src*="linkedin_ico"] {
+    filter: none;
+}
+
+.social img[src*="drive_ico"] {
+    filter: none;
+}
+
+.social img[src*="github_ico"] {
+    filter: none;
+}
+
 .name {
     margin: 0;
     padding: 0;
@@ -78,6 +90,204 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+/* Styles pour la section projets */
+.projects {
+    margin: 40px 0;
+    padding: 20px;
+    padding-right: 120px; /* Espace pour la barre sociale sur grands écrans */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(.08,.74,.86,1);
+}
+
+.projects.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.projects h2 {
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Navigation des onglets projets */
+.project-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.tab-button {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: "Bitcount", sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    transition: all 0.3s cubic-bezier(.08,.74,.86,1);
+    backdrop-filter: blur(10px);
+}
+
+.tab-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+.tab-button.active {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Contenu des projets */
+.project-content {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.project-panel {
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    pointer-events: none;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.project-panel.active {
+    opacity: 1;
+    pointer-events: auto;
+    max-height: none;
+    overflow: visible;
+}
+
+.project-info {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.project-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.project-text h3 {
+    color: #ffffff;
+    font-size: 1.6em;
+    margin: 0;
+    font-weight: 300;
+    flex: 1;
+}
+
+.github-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: transform 0.3s ease;
+}
+
+.github-link:hover {
+    transform: scale(1.1);
+}
+
+.github-icon {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s ease;
+}
+
+.github-link:hover .github-icon {
+    filter: brightness(0) invert(1) drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+}
+
+.project-text p {
+    color: #ffffff;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.project-text ul {
+    color: #ffffff;
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.project-text li {
+    margin-bottom: 8px;
+}
+
+.project-image {
+    flex-shrink: 0;
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-image img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-image img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Style pour les images manquantes */
+.project-image img[src*="errorpng.png"] {
+    filter: blur(2px) brightness(0.7);
+    opacity: 0.6;
+}
+
+.project-image img[src*="errorpng.png"]:hover {
+    filter: blur(2px) brightness(0.8);
+    opacity: 0.7;
 }
 
 .whoami span {
@@ -118,7 +328,156 @@ h1 {
     border-radius: 250px;
 }
 
+/* Styles pour la section contact */
+.contact {
+    margin: 40px 0;
+    padding: 20px;
+    padding-right: 120px; /* Espace pour la barre sociale sur grands écrans */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact h2 {
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contact-content {
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s cubic-bezier(.08,.74,.86,1);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.contact-icon {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+.contact-icon img {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1);
+}
+
+.contact-icon img[src*="linkedin_ico"] {
+    filter: none;
+}
+
+.contact-icon img[src*="drive_ico"] {
+    filter: none;
+}
+
+.contact-icon img[src*="github_ico"] {
+    filter: none;
+}
+
+.contact-icon svg {
+    width: 28px;
+    height: 28px;
+}
+
+.contact-details {
+    flex: 1;
+}
+
+.contact-details h3 {
+    color: #ffffff;
+    font-size: 1.2em;
+    margin: 0 0 5px 0;
+    font-weight: 300;
+}
+
+.contact-details p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+.contact-details a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: #87CEEB;
+    text-decoration: underline;
+}
+
 /* Media queries pour la responsivité mobile */
+
+/* Media query pour les écrans moyens (520px-768px) */
+@media screen and (min-width: 521px) and (max-width: 768px) {
+    .contact-info {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .contact-item {
+        max-width: 100%;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+}
+
+/* Media query pour les écrans moyens-petits (421px-520px) */
+@media screen and (min-width: 421px) and (max-width: 520px) {
+    .contact-info {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    
+    .contact-item {
+        max-width: 100%;
+        padding: 14px;
+        box-sizing: border-box;
+    }
+    
+    .contact-details h3 {
+        font-size: 1em;
+    }
+    
+    .contact-details p {
+        font-size: 0.9em;
+    }
+}
 
 /* Media queries pour les écrans moyens-larges (769px-945px) */
 @media screen and (min-width: 769px) and (max-width: 945px) {
@@ -140,6 +499,18 @@ h1 {
         margin: 0 15px;
     }
     
+    .social img[src*="linkedin_ico"] {
+        filter: none;
+    }
+    
+    .social img[src*="drive_ico"] {
+        filter: none;
+    }
+    
+    .social img[src*="github_ico"] {
+        filter: none;
+    }
+    
     .whoami {
         padding: 20px;
         margin-right: 0; /* Supprimer la marge pour éviter le conflit avec la barre sociale */
@@ -153,6 +524,44 @@ h1 {
     .contributions {
         margin-right: 0; /* Supprimer la marge pour éviter le conflit */
         padding-right: 20px; /* Réinitialiser le padding-right */
+    }
+    
+    .projects {
+        padding-right: 20px; /* Réinitialiser le padding-right */
+    }
+    
+    .project-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .project-image {
+        width: 100%;
+        max-width: 400px;
+        height: 250px;
+        align-self: center;
+        background: rgba(255, 255, 255, 0.05);
+    }
+    
+    .project-image img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+    }
+    
+    .contact {
+        padding-right: 20px;
+    }
+    
+    .contact-info {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .contact-item {
+        max-width: 100%;
     }
 }
 
@@ -177,6 +586,18 @@ h1 {
         width: 16px;
         height: 16px;
         margin: 2px;
+    }
+    
+    .social img[src*="linkedin_ico"] {
+        filter: none;
+    }
+    
+    .social img[src*="drive_ico"] {
+        filter: none;
+    }
+    
+    .social img[src*="github_ico"] {
+        filter: none;
     }
     
     .name h1 {
@@ -250,6 +671,111 @@ h1 {
         max-width: 140px !important;
         width: 100% !important;
     }
+    
+    .projects {
+        padding: 5px;
+        margin: 10px 0;
+    }
+    
+    .projects h2 {
+        font-size: 0.8em;
+    }
+    
+    .project-tabs {
+        gap: 3px;
+    }
+    
+    .tab-button {
+        padding: 6px 8px;
+        font-size: 0.6em;
+        border-radius: 15px;
+    }
+    
+    .project-info {
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .project-text h3 {
+        font-size: 0.8em;
+    }
+    
+    .github-icon {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .project-text p {
+        font-size: 0.6em;
+        line-height: 1.4;
+    }
+    
+    .project-text ul {
+        font-size: 0.5em;
+    }
+    
+    .project-image {
+        height: 100px;
+        background: rgba(255, 255, 255, 0.05);
+    }
+    
+    .project-image img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+    }
+    
+    .contact h2 {
+        font-size: 0.7em;
+    }
+    
+    .contact {
+        padding: 5px;
+        margin: 10px 0;
+    }
+    
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    
+    .contact-item {
+        padding: 8px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-icon {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    
+    .contact-icon img, .contact-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .contact-icon img[src*="linkedin_ico"] {
+        filter: none;
+    }
+    
+    .contact-icon img[src*="drive_ico"] {
+        filter: none;
+    }
+    
+    .contact-icon img[src*="github_ico"] {
+        filter: none;
+    }
+    
+    .contact-details h3 {
+        font-size: 0.7em;
+    }
+    
+    .contact-details p {
+        font-size: 0.6em;
+    }
 }
 
 /* Media queries pour les très petits écrans (211px-320px) */
@@ -269,6 +795,18 @@ h1 {
         width: 20px;
         height: 20px;
         margin: 0 5px;
+    }
+    
+    .social img[src*="linkedin_ico"] {
+        filter: none;
+    }
+    
+    .social img[src*="drive_ico"] {
+        filter: none;
+    }
+    
+    .social img[src*="github_ico"] {
+        filter: none;
     }
     
     .name h1 {
@@ -339,9 +877,107 @@ h1 {
         max-width: 250px !important;
         width: 100% !important;
     }
+    
+    .projects {
+        padding: 8px;
+        margin: 15px 0;
+    }
+    
+    .projects h2 {
+        font-size: 1em;
+    }
+    
+    .project-tabs {
+        gap: 5px;
+    }
+    
+    .tab-button {
+        padding: 8px 12px;
+        font-size: 0.7em;
+        border-radius: 20px;
+    }
+    
+    .project-info {
+        padding: 15px;
+        gap: 12px;
+    }
+    
+    .project-text h3 {
+        font-size: 1em;
+    }
+    
+    .github-icon {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .project-text p {
+        font-size: 0.8em;
+        line-height: 1.4;
+    }
+    
+    .project-text ul {
+        font-size: 0.7em;
+    }
+    
+    .project-image {
+        height: 150px;
+        background: rgba(255, 255, 255, 0.05);
+    }
+    
+    .project-image img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+    }
+    
+    .contact h2 {
+        font-size: 0.9em;
+    }
+    
+    .contact {
+        padding: 8px;
+        margin: 15px 0;
+    }
+    
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .contact-item {
+        padding: 12px;
+    }
+    
+    .contact-icon img, .contact-icon svg {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .contact-icon img[src*="linkedin_ico"] {
+        filter: none;
+    }
+    
+    .contact-icon img[src*="drive_ico"] {
+        filter: none;
+    }
+    
+    .contact-icon img[src*="github_ico"] {
+        filter: none;
+    }
+    
+    .contact-details h3 {
+        font-size: 0.9em;
+    }
+    
+    .contact-details p {
+        font-size: 0.8em;
+    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .social {
         position: relative;
         width: 100%;
@@ -357,6 +993,18 @@ h1 {
         width: 28px;
         height: 28px;
         margin: 0 10px;
+    }
+    
+    .social img[src*="linkedin_ico"] {
+        filter: none;
+    }
+    
+    .social img[src*="drive_ico"] {
+        filter: none;
+    }
+    
+    .social img[src*="github_ico"] {
+        filter: none;
     }
     
     .whoami {
@@ -410,6 +1058,113 @@ h1 {
         width: 100%;
         max-width: 350px;
         height: 150px;
+    }
+    
+    /* Styles projets pour mobile */
+    .projects {
+        padding: 15px;
+        padding-right: 15px;
+        margin: 20px 0;
+    }
+    
+    .projects h2 {
+        font-size: 1.5em;
+    }
+    
+    .project-content {
+        min-height: 300px;
+    }
+    
+    .project-tabs {
+        gap: 8px;
+    }
+    
+    .tab-button {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+    
+    .project-info {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+    
+    .project-text h3 {
+        font-size: 1.3em;
+    }
+    
+    .github-icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .project-text p {
+        font-size: 1em;
+    }
+    
+    .project-text ul {
+        font-size: 0.9em;
+    }
+    
+    .project-image {
+        width: 100%;
+        height: 200px;
+        background: rgba(255, 255, 255, 0.05);
+    }
+    
+    .project-image img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+    }
+    
+    /* Styles contact pour mobile */
+    .contact {
+        padding: 15px;
+        padding-right: 15px;
+        margin: 20px 0;
+    }
+    
+    .contact h2 {
+        font-size: 1.3em;
+    }
+    
+    .contact-info {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    
+    .contact-item {
+        padding: 15px;
+        max-width: 100%;
+    }
+    
+    .contact-icon img, .contact-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .contact-icon img[src*="linkedin_ico"] {
+        filter: none;
+    }
+    
+    .contact-icon img[src*="drive_ico"] {
+        filter: none;
+    }
+    
+    .contact-icon img[src*="github_ico"] {
+        filter: none;
+    }
+    
+    .contact-details h3 {
+        font-size: 1.1em;
+    }
+    
+    .contact-details p {
+        font-size: 0.9em;
     }
 }
 
@@ -486,5 +1241,18 @@ h1 {
     
     .contributions h2 {
         font-size: 1.1em;
+    }
+}
+
+/* Media query pour forcer l'affichage en colonne unique uniquement sur très petits écrans */
+@media screen and (max-width: 420px) {
+    .contact-info {
+        grid-template-columns: 1fr !important;
+        gap: 10px;
+    }
+    
+    .contact-item {
+        max-width: 100%;
+        padding: 15px;
     }
 }
