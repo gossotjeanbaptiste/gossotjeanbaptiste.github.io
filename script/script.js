@@ -48,9 +48,9 @@ function adaptContributionsIframe() {
 }
 
 // Fonction pour déboguer la taille d'écran (à supprimer en production)
-function debugScreenSize() {
+/*function debugScreenSize() {
     console.log(`Largeur d'écran: ${window.innerWidth}px, Hauteur: ${window.innerHeight}px`);
-}
+}*/
 
 // Fonction pour gérer les cas extrêmes de largeur
 function handleExtremeWidths() {
@@ -101,7 +101,7 @@ window.addEventListener('resize', () => {
     adaptContributionsIframe();
     handleExtremeWidths();
     handleSocialBar();
-    debugScreenSize(); // À supprimer en production
+    //debugScreenSize(); // À supprimer en production
 });
 
 // Adapter au chargement de la page
@@ -109,5 +109,5 @@ document.addEventListener('DOMContentLoaded', () => {
     adaptContributionsIframe();
     handleExtremeWidths();
     handleSocialBar();
-    debugScreenSize(); // À supprimer en production
+    //debugScreenSize(); // À supprimer en production
 });
