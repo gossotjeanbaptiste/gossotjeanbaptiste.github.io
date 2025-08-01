@@ -667,7 +667,7 @@ h1 {
     }
     
     .contributions iframe {
-        height: 80px !important;
+        height: 190px !important;
         max-width: 140px !important;
         width: 100% !important;
     }
@@ -873,7 +873,7 @@ h1 {
     }
     
     .contributions iframe {
-        height: 100px !important;
+        height: 190px !important;
         max-width: 250px !important;
         width: 100% !important;
     }
@@ -1057,7 +1057,7 @@ h1 {
     .contributions iframe {
         width: 100%;
         max-width: 350px;
-        height: 150px;
+        height: 190px;
     }
     
     /* Styles projets pour mobile */
@@ -1196,7 +1196,7 @@ h1 {
     }
     
     .contributions iframe {
-        height: 125px !important;
+        height: 190px !important;
         max-width: 310px !important;
     }
 }
@@ -1234,7 +1234,7 @@ h1 {
     }
     
     .contributions iframe {
-        height: 120px !important;
+        height: 190px !important;
         max-width: 300px !important;
         width: 100% !important;
     }
