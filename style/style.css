@@ -37,6 +37,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
 }
 
 .social img {
@@ -58,8 +59,21 @@ h1 {
 .whoami {
     margin: 0;
     padding: 20px;
+    padding-right: 120px; /* Espace pour la barre sociale sur grands écrans */
     height: auto;
     min-height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contributions {
+    margin: 20px 0 0 0;
+    padding: 20px;
+    padding-right: 120px; /* Espace pour la barre sociale sur grands écrans */
+    height: auto;
+    min-height: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,17 +114,377 @@ h1 {
     text-align: center;
 }
 
-.contributions {
-    margin: 20px 0 0 0;
-    padding: 20px;
-    height: auto;
-    min-height: 25vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .whoami img {
     border-radius: 250px;
+}
+
+/* Media queries pour la responsivité mobile */
+
+/* Media queries pour les écrans moyens-larges (769px-945px) */
+@media screen and (min-width: 769px) and (max-width: 945px) {
+    .social {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0;
+        background: rgba(0, 0, 0, 0.1);
+        order: -1; /* Placer la barre sociale en haut */
+    }
+    
+    .social img {
+        width: 32px;
+        height: 32px;
+        margin: 0 15px;
+    }
+    
+    .whoami {
+        padding: 20px;
+        margin-right: 0; /* Supprimer la marge pour éviter le conflit avec la barre sociale */
+        padding-right: 20px; /* Réinitialiser le padding-right */
+    }
+    
+    .name {
+        margin-top: 10px;
+    }
+    
+    .contributions {
+        margin-right: 0; /* Supprimer la marge pour éviter le conflit */
+        padding-right: 20px; /* Réinitialiser le padding-right */
+    }
+}
+
+/* Media queries pour les micro-écrans (150px-210px) */
+@media screen and (max-width: 210px) {
+    body {
+        font-size: 10px;
+    }
+    
+    .social {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 0;
+        background: rgba(0, 0, 0, 0.2);
+    }
+    
+    .social img {
+        width: 16px;
+        height: 16px;
+        margin: 2px;
+    }
+    
+    .name h1 {
+        font-size: 0.8em;
+        text-align: center;
+        padding: 2px;
+        word-break: break-word;
+    }
+    
+    .whoami {
+        padding: 5px;
+        min-height: auto;
+    }
+    
+    .whoami img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .whoami h1 {
+        font-size: 0.9em;
+        text-align: center;
+        word-break: break-word;
+        line-height: 1.1;
+    }
+    
+    .whoami h2 {
+        font-size: 0.7em;
+        text-align: center;
+        word-break: break-word;
+        line-height: 1.2;
+    }
+    
+    .whoami h4 {
+        font-size: 0.6em;
+        text-align: center;
+        word-break: break-word;
+        line-height: 1.2;
+    }
+    
+    .about-me {
+        max-width: 95%;
+        margin-top: 5px;
+        padding: 5px;
+    }
+    
+    .about-me h3 {
+        font-size: 0.8em;
+        word-break: break-word;
+    }
+    
+    .about-me p {
+        font-size: 0.6em;
+        line-height: 1.3;
+        word-break: break-word;
+    }
+    
+    .contributions {
+        padding: 5px;
+        margin-top: 5px;
+    }
+    
+    .contributions h2 {
+        font-size: 0.7em;
+        text-align: center;
+        word-break: break-word;
+    }
+    
+    .contributions iframe {
+        height: 80px !important;
+        max-width: 140px !important;
+        width: 100% !important;
+    }
+}
+
+/* Media queries pour les très petits écrans (211px-320px) */
+@media screen and (min-width: 211px) and (max-width: 320px) {
+    .social {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 0;
+        background: rgba(0, 0, 0, 0.15);
+    }
+    
+    .social img {
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+    }
+    
+    .name h1 {
+        font-size: 1em;
+        text-align: center;
+        padding: 0 5px;
+        word-break: break-word;
+    }
+    
+    .whoami {
+        padding: 8px;
+        min-height: auto;
+    }
+    
+    .whoami img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .whoami h1 {
+        font-size: 1.1em;
+        text-align: center;
+        word-break: break-word;
+    }
+    
+    .whoami h2 {
+        font-size: 0.9em;
+        text-align: center;
+        word-break: break-word;
+    }
+    
+    .whoami h4 {
+        font-size: 0.8em;
+        text-align: center;
+        word-break: break-word;
+    }
+    
+    .about-me {
+        max-width: 95%;
+        margin-top: 10px;
+        padding: 8px;
+    }
+    
+    .about-me h3 {
+        font-size: 1em;
+        word-break: break-word;
+    }
+    
+    .about-me p {
+        font-size: 0.8em;
+        line-height: 1.4;
+        word-break: break-word;
+    }
+    
+    .contributions {
+        padding: 8px;
+        margin-top: 8px;
+    }
+    
+    .contributions h2 {
+        font-size: 0.9em;
+        text-align: center;
+        word-break: break-word;
+    }
+    
+    .contributions iframe {
+        height: 100px !important;
+        max-width: 250px !important;
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .social {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        background: rgba(0, 0, 0, 0.1);
+    }
+    
+    .social img {
+        width: 28px;
+        height: 28px;
+        margin: 0 10px;
+    }
+    
+    .whoami {
+        padding: 15px;
+        padding-right: 15px; /* Réinitialiser le padding-right pour mobile */
+        min-height: auto;
+    }
+    
+    .whoami h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    
+    .whoami h2 {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    
+    .whoami h4 {
+        font-size: 1em;
+        text-align: center;
+    }
+    
+    .about-me {
+        max-width: 90%;
+        margin-top: 20px;
+        padding: 15px;
+    }
+    
+    .about-me h3 {
+        font-size: 1.4em;
+    }
+    
+    .about-me p {
+        font-size: 1em;
+        line-height: 1.5;
+    }
+    
+    .contributions {
+        padding: 15px;
+        padding-right: 15px; /* Réinitialiser le padding-right pour mobile */
+        margin-top: 10px;
+    }
+    
+    .contributions h2 {
+        font-size: 1.3em;
+        text-align: center;
+    }
+    
+    .contributions iframe {
+        width: 100%;
+        max-width: 350px;
+        height: 150px;
+    }
+}
+
+/* Media query spécifique pour les résolutions problématiques 480-520px */
+@media screen and (min-width: 481px) and (max-width: 520px) {
+    .whoami {
+        padding: 10px;
+    }
+    
+    .whoami h1 {
+        font-size: 1.25em;
+        line-height: 1.2;
+    }
+    
+    .whoami h2 {
+        font-size: 1.05em;
+        line-height: 1.3;
+    }
+    
+    .whoami h4 {
+        font-size: 0.95em;
+        line-height: 1.4;
+    }
+    
+    .about-me {
+        max-width: 92%;
+        padding: 12px;
+        margin-top: 15px;
+    }
+    
+    .contributions iframe {
+        height: 125px !important;
+        max-width: 310px !important;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .name h1 {
+        font-size: 1.2em;
+        text-align: center;
+        padding: 0 10px;
+    }
+    
+    .whoami h1 {
+        font-size: 1.3em;
+    }
+    
+    .whoami h2 {
+        font-size: 1em;
+    }
+    
+    .whoami h4 {
+        font-size: 0.9em;
+    }
+    
+    .about-me {
+        padding: 10px;
+        max-width: 95%;
+    }
+    
+    .about-me h3 {
+        font-size: 1.2em;
+    }
+    
+    .about-me p {
+        font-size: 0.9em;
+    }
+    
+    .contributions iframe {
+        height: 120px !important;
+        max-width: 300px !important;
+        width: 100% !important;
+    }
+    
+    .contributions h2 {
+        font-size: 1.1em;
+    }
 }
