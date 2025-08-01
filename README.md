@@ -1,4 +1,4 @@
-# 🌟 Portfolio de Jean-Baptiste GOSSOT
+# 🌟 Portfolio de Jean-Baptiste (POGGIO) GOSSOT
 
 Bienvenue sur mon portfolio personnel ! Ce site présente mon parcours d'étudiant en informatique à Epitech Nancy.
 
@@ -81,7 +81,7 @@ Ce portfolio a été créé pour :
 ## 📞 Contact
 
 - 🎓 **Étudiant** à Epitech Nancy
-- 💼 **LinkedIn** : [Jean-Baptiste GOSSOT](https://www.linkedin.com/in/jean-baptiste-gossot-137589247/)
+- 💼 **LinkedIn** : [Jean-Baptiste (POGGIO) GOSSOT](https://www.linkedin.com/in/jean-baptiste-gossot-137589247/)
 - 🐙 **GitHub** : [gossotjeanbaptiste](https://github.com/gossotjeanbaptiste)
 - 📄 **CV** : [Voir mon CV](https://drive.google.com/file/d/1e2rouL1f6sGtolIy88TSh77ZffeCzXvV/view?usp=sharing)
 - 📧 **Email** : [jean-baptiste.gossot@epitech.eu](mailto:jean-baptiste.gossot@epitech.eu)
@@ -92,7 +92,7 @@ Ce portfolio a été créé pour :
 
 ## 🇬🇧 English Version
 
-### 🌟 Jean-Baptiste GOSSOT's Portfolio
+### 🌟 Jean-Baptiste (POGGIO) GOSSOT's Portfolio
 
 Welcome to my personal portfolio! This website showcases my journey as a Computer Science student at Epitech Nancy.
 
@@ -175,7 +175,7 @@ This portfolio was created to:
 ### 📞 Contact Information
 
 - 🎓 **Student** at Epitech Nancy
-- 💼 **LinkedIn**: [Jean-Baptiste GOSSOT](https://www.linkedin.com/in/jean-baptiste-gossot-137589247/)
+- 💼 **LinkedIn**: [Jean-Baptiste (POGGIO) GOSSOT](https://www.linkedin.com/in/jean-baptiste-gossot-137589247/)
 - 🐙 **GitHub**: [gossotjeanbaptiste](https://github.com/gossotjeanbaptiste)
 - 📄 **Resume**: [View my CV](https://drive.google.com/file/d/1Nyg-jKrza7pqOEhJjLF3ScE-voQ38Rke/view?usp=sharing)
 - 📧 **Email** : [jean-baptiste.gossot@epitech.eu](mailto:jean-baptiste.gossot@epitech.eu)
