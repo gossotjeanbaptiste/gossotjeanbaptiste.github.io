@@ -125,6 +125,9 @@ Ce portfolio a été conçu pour :
 
 ### Performance & Code
 
+- **CSS Optimisé** : Réduction de ~26% de lignes de code (~1900 -> ~1400)
+- **Breakpoints** : Passage de 11 breakpoints à 3 breakpoints majeurs
+- **Introduction de variables CSS** : Meilleure gestion des couleurs et des espacements
 - **JavaScript optimisé** : Réduction de 50% du code JS (180 → 90 lignes)
 - **Sélecteurs CSS optimisés** : Amélioration des performances de rendu
 
