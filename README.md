@@ -4,39 +4,78 @@ Bienvenue sur mon portfolio personnel ! Ce site présente mon parcours d'étudia
 
 ## 🚀 Aperçu
 
-Ce portfolio est une vitrine de mes compétences et de mon parcours dans le développement informatique. Il présente :
+Ce portfolio est une vitrine complète de mes compétences et de mon parcours dans le développement informatique. Il présente :
 
-- 👋 Une présentation personnelle
-- 📊 Mes contributions GitHub (publiques et privées)
-- � Showcase interactif de mes projets avec navigation par onglets
+- 👋 Une présentation personnelle interactive
+- 🎓 Timeline éducative avec mon parcours scolaire complet
+- 📊 Mes contributions GitHub en temps réel
+- 🗂️ Showcase interactif de mes projets avec navigation par onglets
 - 🔗 Liens directs vers les repositories GitHub de chaque projet
-- �🔗 Mes liens professionnels (LinkedIn, GitHub, CV)
-- 🌍 Version bilingue (Français/Anglais)
+- 🏷️ Badges technologiques pour chaque projet
+- 💼 Section contact complète avec informations professionnelles
+- 🌍 Version bilingue (Français/Anglais) avec navigation fluide
+- ✨ Effets visuels avancés et animations
 
 ## 🛠️ Technologies utilisées
 
-- **HTML5** - Structure sémantique avec navigation par onglets
-- **CSS3** - Styles modernes avec dégradés, animations et design responsive
-- **JavaScript** - Interactivité pour la navigation des projets et adaptations responsive
-- **SVG** - Icônes vectorielles pour les drapeaux et liens sociaux
-- **GitHub Pages** - Hébergement
+- **HTML5** - Structure sémantique moderne avec navigation par onglets
+- **CSS3** - Styles avancés avec dégradés, glassmorphism, backdrop-filter
+- **JavaScript** - Interactivité optimisée et gestion responsive intelligente
+- **SVG** - Icônes vectorielles pour les drapeaux, liens sociaux et globes
+- **GitHub Pages** - Hébergement et déploiement automatique
+- **Bitcount Font** - Police personnalisée pour une identité unique
 
-## ✨ Fonctionnalités
+## ✨ Fonctionnalités principales
 
-- 🎨 Design moderne avec dégradé de couleurs et effet glassmorphism
-- 🌐 Navigation bilingue (FR/EN)
-- ⚡ Animations CSS fluides et optimisées pour le confort utilisateur
-- 📈 Intégration des contributions GitHub
-- 🗂️ Système de projets interactifs avec navigation par onglets
-- 🔗 Liens directs vers les repositories GitHub de chaque projet
-- 📱 Design entièrement responsive (mobile, tablette, desktop)
-- 🖼️ Galerie d'images optimisée pour chaque projet
-- 🔗 Liens directs vers mes profils professionnels
+### 🎨 Design & Interface
+
+- Design moderne avec dégradé de couleurs dynamique
+- Effet glassmorphism avec backdrop-filter
+- Social bar avec effets hover sophistiqués
+- Animations CSS fluides optimisées pour les performances
+- Interface entièrement responsive (480p à 4K)
+
+### 🎓 Section Éducation
+
+- Timeline verticale interactive avec progression chronologique
+- Liens directs vers les sites des établissements scolaires
+- Icônes globe avec effets de luminescence
+- Cartes diplômes avec informations détaillées
+- Animations d'apparition au scroll
+
+### 🗂️ Projets Interactifs
+
+- Système de navigation par onglets fluide
+- Galerie d'images optimisée pour chaque projet
+- Badges technologiques avec effets hover
+- Descriptions détaillées et fonctionnalités
+- Liens GitHub directs et accessibles
+
+### 🌈 Effets Visuels Avancés
+
+- **Social Bar** : Effets hover personnalisés par plateforme
+  - LinkedIn : Lueur bleue distinctive
+  - Google Drive : Dégradé tricolore Google
+  - GitHub : Luminescence blanche
+  - Drapeaux : Effet tricolore bleu-blanc-rouge
+- **Contact** : Icônes avec couleurs thématiques
+  - Email : Lueur rouge Gmail
+  - Téléphone : Lueur verte intense
+  - Localisation : Lueur bleue Google
+- **Navigation** : Transitions fluides et feedback visuel
+
+### � Responsive Design
+
+- Adaptation intelligente de 480px à 4K+
+- Breakpoints optimisés pour tous les appareils
+- Iframe GitHub responsive avec ajustements automatiques
+- Typographie et espacements adaptatifs
+- Performance optimisée sur mobile
 
 ## 🌍 Versions linguistiques
 
-- **🇫🇷 Version française** : `index.html`
-- **🇬🇧 Version anglaise** : `pages/english.html`
+- **🇫🇷 Version française** : `index.html` - Version principale avec toutes les fonctionnalités
+- **🇬🇧 Version anglaise** : `pages/english.html` - Traduction complète
 
 ## 📁 Structure du projet
 
@@ -46,47 +85,81 @@ Ce portfolio est une vitrine de mes compétences et de mon parcours dans le dév
 ├── 📁 pages/
 │   └── 📄 english.html        # Version anglaise
 ├── 📁 style/
-│   └── 🎨 style.css          # Feuilles de style responsive
+│   ├── 🎨 style.css          # Style
 ├── 📁 script/
-│   └── ⚡ script.js          # JavaScript pour interactivité
+│   ├── ⚡ script.js          # JavaScript optimisé
 ├── 📁 images/
 │   ├── 🖼️ avatar.png         # Photo de profil
-│   ├── 🇫🇷 FR.svg            # Drapeau français
-│   ├── 🇬🇧 USUK.svg          # Drapeau anglais
-│   ├── 🔗 *_ico.svg/*.png        # Icônes sociales
+│   ├── 🇫🇷 FR.svg            # Drapeau français (avec effets hover)
+│   ├── 🇬🇧 USUK.svg          # Drapeau anglais (avec effets hover)
+│   ├── 🔗 linkedin_ico.png   # Icône LinkedIn
+│   ├── 🔗 github_ico.svg     # Icône GitHub
+│   ├── 🔗 drive_ico.png      # Icône Google Drive
+│   ├── 🌐 globe_ico.svg      # Icône globe pour les écoles
 │   ├── 🖼️ dm_web.png         # Capture DM Web
 │   ├── 🖼️ my_hunter.jpg      # Capture MyHunter
 │   ├── 🖼️ organized.png      # Capture Organized
 │   ├── 🖼️ wolf3D.jpg         # Capture Wolf3D
-│   ├── 🖼️ errorpng.png      # image erreur
-│   └── 🖼️ portfolio.png      # Capture Portfolio
+│   ├── 🖼️ portfolio.png      # Capture Portfolio
+│   └── 🖼️ errorpng.png       # Image d'erreur fallback
 ├── 📁 fonts/
-│   └── 🔤 BitcountPropSingle-Light.ttf # Police personnalisée
+│   └── 🔤 BitcountPropSingle-Light.ttf # Police Bitcount personnalisée
 ├── 📁 icon/
-│   └── 🌟 portfolio_ico.png           # Favicon
-└── 📖 README.md              # Ce fichier
+│   └── 🌟 portfolio_ico.png           # Favicon du site
+└── 📖 README.md              # Documentation du projet
 ```
 
 ## 🎯 Objectifs du projet
 
-Ce portfolio a été créé pour :
+Ce portfolio a été conçu pour :
 
-- Présenter mon profil professionnel et mes compétences techniques
-- Démontrer mes compétences en développement web (HTML, CSS, JavaScript)
-- Showcaser mes projets de programmation avec détails techniques
-- Centraliser mes liens et informations importantes
-- Offrir une expérience utilisateur moderne, responsive et engageante
-- Mettre en avant ma progression et mes contributions GitHub
+- **Présenter mon identité professionnelle** avec un design moderne et engageant
+- **Démontrer mes compétences techniques** en développement web et programmation
+- **Showcaser mes projets** avec détails techniques et liens vers les repositories
+- **Centraliser mes informations** de contact et liens professionnels
+- **Offrir une expérience utilisateur optimale** sur tous les appareils
+- **Illustrer ma progression** académique et mes contributions open source
+- **Servir de vitrine technologique** avec des effets visuels avancés
+
+## 🚀 Optimisations récentes
+
+### Performance & Code
+
+- **JavaScript optimisé** : Réduction de 50% du code JS (180 → 90 lignes)
+- **Sélecteurs CSS optimisés** : Amélioration des performances de rendu
+
+### Fonctionnalités avancées
+
+- **Timeline éducative** : Parcours scolaire interactif avec liens vers les établissements
+- **Effets hover sophistiqués** : Luminescences colorées par plateforme/fonction
+- **Badges technologiques** : Affichage des technologies utilisées pour chaque projet
+- **Navigation fluide** : Transitions optimisées et feedback visuel
+- **Responsive ultra-adaptatif** : Support des écrans de 480px à 4K+
 
 ## 📞 Contact
 
-- 🎓 **Étudiant** à Epitech Nancy
-- 💼 **LinkedIn** : [Jean-Baptiste (POGGIO) GOSSOT](https://www.linkedin.com/in/jean-baptiste-gossot-137589247/)
-- 🐙 **GitHub** : [gossotjeanbaptiste](https://github.com/gossotjeanbaptiste)
-- 📄 **CV** : [Voir mon CV](https://drive.google.com/file/d/1e2rouL1f6sGtolIy88TSh77ZffeCzXvV/view?usp=sharing)
-- 📧 **Email** : [jean-baptiste.gossot@epitech.eu](mailto:jean-baptiste.gossot@epitech.eu)
-- 📱 **Téléphone** : [+33 6 38 40 44 06](tel:+33638404406)
-- 🌐 **Portfolio** : [gossotjeanbaptiste.github.io](https://gossotjeanbaptiste.github.io/)
+### 🎓 Profil académique
+
+- **Étudiant** en Informatique à **Epitech Nancy** (2024-2029)
+- **Diplôme visé** : Expert en Technologie de l'Information (Bac+5)
+- **Spécialisation** : Ingénierie Logiciel RNCP Niveau 7
+
+### 💼 Liens professionnels
+
+- **💼 LinkedIn** : [Jean-Baptiste (POGGIO) GOSSOT](https://www.linkedin.com/in/jean-baptiste-gossot-137589247/)
+- **🐙 GitHub** : [gossotjeanbaptiste](https://github.com/gossotjeanbaptiste)
+- **📄 CV** : [Voir mon CV](https://drive.google.com/file/d/1e2rouL1f6sGtolIy88TSh77ZffeCzXvV/view?usp=sharing)
+
+### � Coordonnées
+
+- **📧 Email** : [jean-baptiste.gossot@epitech.eu](mailto:jean-baptiste.gossot@epitech.eu)
+- **📱 Téléphone** : [+33 6 38 40 44 06](tel:+33638404406)
+- **📍 Adresse** : 23Bis Rue du Général Leclerc, 54300 Lunéville
+
+### 🌐 Portfolio en ligne
+
+- **🇫🇷 Version française** : [gossotjeanbaptiste.github.io](https://gossotjeanbaptiste.github.io/)
+- **🇬🇧 Version anglaise** : [gossotjeanbaptiste.github.io/pages/english.html](https://gossotjeanbaptiste.github.io/pages/english.html)
 
 ---
 
@@ -98,91 +171,50 @@ Welcome to my personal portfolio! This website showcases my journey as a Compute
 
 ### 🚀 Overview
 
-This portfolio is a showcase of my skills and journey in software development. It features:
+This portfolio is a comprehensive showcase of my skills and journey in software development. It features:
 
-- 👋 Personal introduction
-- 📊 My GitHub contributions (public and private)
-- � Interactive project showcase with tab navigation
+- 👋 Interactive personal introduction
+- 🎓 Educational timeline with complete academic background
+- 📊 Real-time GitHub contributions
+- 🗂️ Interactive project showcase with tab navigation
 - 🔗 Direct links to GitHub repositories for each project
-- �🔗 My professional links (LinkedIn, GitHub, CV)
-- 🌍 Bilingual version (French/English)
+- 🏷️ Technology badges for each project
+- 💼 Complete contact section with professional information
+- 🌍 Bilingual version (French/English) with smooth navigation
+- ✨ Advanced visual effects and animations
 
 ### 🛠️ Technologies Used
 
-- **HTML5** - Semantic structure with tab navigation
-- **CSS3** - Modern styles with gradients, animations, and responsive design
-- **JavaScript** - Interactivity for project navigation and responsive adaptations
-- **SVG** - Vector icons for flags and social links
-- **GitHub Pages** - Hosting
+- **HTML5** - Modern semantic structure with tab navigation
+- **CSS3** - Advanced styles with gradients, glassmorphism, backdrop-filter
+- **JavaScript** - Optimized interactivity and intelligent responsive management
+- **SVG** - Vector icons for flags, social links, and globes
+- **GitHub Pages** - Hosting and automatic deployment
+- **Bitcount Font** - Custom font for unique identity
 
-### ✨ Features
+### ✨ Key Features
 
-- 🎨 Modern design with color gradients and glassmorphism effects
-- 🌐 Bilingual navigation (FR/EN)
-- ⚡ Smooth CSS animations optimized for user comfort
-- 📈 GitHub contributions integration
-- 🗂️ Interactive project system with tab navigation
-- 🔗 Direct links to GitHub repositories for each project
-- 📱 Fully responsive design (mobile, tablet, desktop)
-- 🖼️ Optimized image gallery for each project
-- 🔗 Direct links to my professional profiles
-
-### 🌍 Language Versions
-
-- **🇫🇷 French version**: `index.html`
-- **🇬🇧 English version**: `pages/english.html`
-
-### 📁 Project Structure
-
-```text
-📦 gossotjeanbaptiste.github.io
-├── 📄 index.html              # Homepage (FR)
-├── 📁 pages/
-│   └── 📄 english.html        # English version
-├── 📁 style/
-│   └── 🎨 style.css          # Responsive stylesheets
-├── 📁 script/
-│   └── ⚡ script.js          # JavaScript for interactivity
-├── 📁 images/
-│   ├── 🖼️ avatar.png         # Profile picture
-│   ├── 🇫🇷 FR.svg            # French flag
-│   ├── 🇬🇧 USUK.svg          # English flag
-│   ├── 🔗 *_ico.svg/.png        # Social icons
-│   ├── 🖼️ dm_web.png         # DM Web screenshot
-│   ├── 🖼️ my_hunter.jpg      # MyHunter screenshot
-│   ├── 🖼️ organized.png      # Organized screenshot
-│   ├── 🖼️ wolf3D.jpg         # Wolf3D screenshot
-│   ├── 🖼️ errorpng.png      # image error
-│   └── 🖼️ portfolio.png      # Portfolio screenshot
-├── 📁 fonts/
-│   └── 🔤 BitcountPropSingle-Light.ttf # Custom font
-├── 📁 icon/
-│   └── 🌟 portfolio_ico.png           # Favicon
-└── 📖 README.md              # This file
-```
-
-### 🎯 Project Goals
-
-This portfolio was created to:
-
-- Present my professional profile and technical skills
-- Demonstrate my web development skills (HTML, CSS, JavaScript)
-- Showcase my programming projects with technical details
-- Centralize my links and important information
-- Provide a modern, responsive and engaging user experience
-- Highlight my progress and GitHub contributions
+- 🎨 Modern design with dynamic color gradients and glassmorphism effects
+- � Interactive educational timeline with school website links
+- 🌈 Advanced hover effects with platform-specific luminescence
+- 🗂️ Smooth project navigation with technology badges
+- � Ultra-responsive design (480px to 4K+ support)
+- ⚡ Optimized performance with simplified codebase
+- 🔗 Enhanced contact section with themed icon effects
 
 ### 📞 Contact Information
 
-- 🎓 **Student** at Epitech Nancy
+- 🎓 **Computer Science Student** at Epitech Nancy (2024-2029)
 - 💼 **LinkedIn**: [Jean-Baptiste (POGGIO) GOSSOT](https://www.linkedin.com/in/jean-baptiste-gossot-137589247/)
 - 🐙 **GitHub**: [gossotjeanbaptiste](https://github.com/gossotjeanbaptiste)
-- 📄 **Resume**: [View my CV](https://drive.google.com/file/d/1Nyg-jKrza7pqOEhJjLF3ScE-voQ38Rke/view?usp=sharing)
-- 📧 **Email** : [jean-baptiste.gossot@epitech.eu](mailto:jean-baptiste.gossot@epitech.eu)
-- 📱 **Phone** : [+33 6 38 40 44 06](tel:+33638404406)
-- 🌐 **Portfolio**: [gossotjeanbaptiste.github.io](https://gossotjeanbaptiste.github.io/pages/english.html)
+- 📄 **Resume**: [View my CV](https://drive.google.com/file/d/1e2rouL1f6sGtolIy88TSh77ZffeCzXvV/view?usp=sharing)
+- 📧 **Email**: [jean-baptiste.gossot@epitech.eu](mailto:jean-baptiste.gossot@epitech.eu)
+- 📱 **Phone**: [+33 6 38 40 44 06](tel:+33638404406)
+- 🌐 **Portfolio**: [gossotjeanbaptiste.github.io](https://gossotjeanbaptiste.github.io/)
 
 ---
 
-Développé avec ❤️ par Jean-Baptiste (POGGIO) GOSSOT
-© Copyright 2021-2029 JustWirelessInc. All rights reserved.
+**Développé avec ❤️ par Jean-Baptiste (POGGIO) GOSSOT**  
+*Étudiant en Informatique à Epitech Nancy*
+
+© 2024-2029 - Portfolio Personnel - Tous droits réservés
