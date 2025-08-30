@@ -310,6 +310,7 @@ img {
     will-change: transform;
     backface-visibility: hidden;
     transform: translateZ(0);
+    margin-bottom: 20px;
 }
 
 .about-me {
@@ -1023,16 +1024,16 @@ img {
 /* ===== BREAKPOINT 2: SMARTPHONES et petites tablettes (jusqu'à 767px) ===== */
 @media screen and (max-width: 767px) {
     body {
-        font-size: 14px;
+        font-size: 16px;
     }
     
     /* Variables spécifiques mobile */
     :root {
-        --font-xl: 1.5em;
-        --font-lg: 1.3em;
-        --font-md: 1.1em;
-        --font-base: 1em;
-        --font-sm: 0.9em;
+        --font-xl: 1.8em;
+        --font-lg: 1.5em;
+        --font-md: 1.3em;
+        --font-base: 1.1em;
+        --font-sm: 1em;
     }
     
     /* Sections générales */
@@ -1043,20 +1044,18 @@ img {
     }
     
     .name h1 {
-        font-size: 1.2em;
+        font-size: 1.4em;
         text-align: center;
         padding: 0 10px;
     }
     
     /* Images */
-    .whoami img {
-        width: 80px;
-        height: 80px;
+    .avatar {
+        transform: translateZ(0) scale(1.5) !important;
     }
     
-    .avatar {
-        width: 60px;
-        height: 60px;
+    .avatar:hover {
+        transform: translateZ(0) scale(1.7) !important;
     }
     
     /* About me */
@@ -1163,21 +1162,38 @@ img {
         padding: 15px;
         margin: 15px 0;
     }
+    
+    /* Réduction des espacements des listes imbriquées sur mobile */
+    .timeline-content li {
+        margin-bottom: 4px;
+        line-height: 1.4;
+    }
+    
+    .timeline-content ul ul {
+        margin-top: 4px;
+        margin-bottom: 0;
+        padding-left: 15px;
+    }
+    
+    .timeline-content ul ul li {
+        margin-bottom: 2px;
+        font-size: 1em;
+    }
 }
 
 /* ===== BREAKPOINT 3: TRÈS PETITS ÉCRANS (jusqu'à 420px) ===== */
 @media screen and (max-width: 420px) {
     body {
-        font-size: 12px;
+        font-size: 14px;
     }
     
     /* Variables spécifiques très petits écrans */
     :root {
-        --font-xl: 1.2em;
-        --font-lg: 1.1em;
-        --font-md: 1em;
-        --font-base: 0.9em;
-        --font-sm: 0.8em;
+        --font-xl: 1.4em;
+        --font-lg: 1.3em;
+        --font-md: 1.2em;
+        --font-base: 1em;
+        --font-sm: 0.9em;
     }
     
     /* Sections */
@@ -1187,24 +1203,18 @@ img {
     }
     
     .name h1 {
-        font-size: 1em;
+        font-size: 1.2em;
         padding: 0 5px;
         word-break: break-word;
     }
     
     /* Images */
-    .whoami img {
-        width: 60px;
-        height: 60px;
-        min-width: 40px;
-        min-height: 40px;
+    .avatar {
+        transform: translateZ(0) scale(1.5) !important;
     }
     
-    .avatar {
-        width: 50px;
-        height: 50px;
-        min-width: 35px;
-        min-height: 35px;
+    .avatar:hover {
+        transform: translateZ(0) scale(1.7) !important;
     }
     
     /* About me */
@@ -1215,12 +1225,12 @@ img {
     }
     
     .about-me h3 {
-        font-size: 1em;
+        font-size: 1.2em;
         word-break: break-word;
     }
     
     .about-me p {
-        font-size: 0.8em;
+        font-size: 1em;
         word-break: break-word;
     }
     
@@ -1234,13 +1244,13 @@ img {
     /* Projets */
     .tab-button {
         padding: 8px 12px;
-        font-size: 0.7em;
+        font-size: 0.9em;
         border-radius: 20px;
     }
     
     .tech {
         padding: 5px 10px;
-        font-size: 0.8em;
+        font-size: 1em;
         border-radius: 12px;
     }
     
@@ -1256,7 +1266,7 @@ img {
     }
     
     .project-text h3 {
-        font-size: 1em;
+        font-size: 1.2em;
     }
     
     .github-icon {
@@ -1265,12 +1275,12 @@ img {
     }
     
     .project-text p {
-        font-size: 0.8em;
+        font-size: 1em;
         line-height: 1.4;
     }
     
     .project-text ul {
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
     
     .project-image {
@@ -1300,11 +1310,11 @@ img {
     }
     
     .contact-details h3 {
-        font-size: 0.9em;
+        font-size: 1.1em;
     }
     
     .contact-details p {
-        font-size: 0.8em;
+        font-size: 1em;
     }
     
     /* Éducation */
@@ -1340,22 +1350,29 @@ img {
     }
     
     .timeline-content h3 {
-        font-size: 0.9em;
+        font-size: 1.1em;
         word-break: break-word;
     }
     
     .timeline-period {
-        font-size: 0.8em;
+        font-size: 1em;
     }
     
     .timeline-content li {
-        font-size: 0.8em;
+        font-size: 1em;
         line-height: 1.4;
+        margin-bottom: 2px;
+    }
+    
+    .timeline-content ul ul {
+        margin-top: 2px;
+        margin-bottom: 0;
+        padding-left: 12px;
     }
     
     .timeline-content ul ul li {
-        font-size: 0.75em;
-        margin-bottom: 2px;
+        font-size: 0.9em;
+        margin-bottom: 1px;
     }
     
     .diploma {
@@ -1364,10 +1381,10 @@ img {
     }
     
     .diploma h4 {
-        font-size: 0.9em;
+        font-size: 1.1em;
     }
     
     .diploma p {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 }

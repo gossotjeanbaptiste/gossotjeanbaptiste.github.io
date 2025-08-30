@@ -2,12 +2,9 @@
 
 // Configuration des breakpoints pour l'iframe
 const iframeSettings = {
-    210: { height: '80px', maxWidth: '140px' },
-    320: { height: '100px', maxWidth: '250px' },
-    520: { height: '120px', maxWidth: '300px' },
-    768: { height: '150px', maxWidth: '350px' },
-    945: { height: '170px', maxWidth: '600px' },
-    default: { height: '190px', maxWidth: '800px', width: '800px' }
+    768: { height: '190px', maxWidth: '800px' },
+    945: { height: '200px', maxWidth: '600px' },
+    default: { height: '220px', maxWidth: '800px', width: '800px' }
 };
 
 // Adaptation responsive de l'iframe GitHub
@@ -18,12 +15,11 @@ function adaptContributionsIframe() {
     const width = window.innerWidth;
     let settings = iframeSettings.default;
     
-    // Trouver les bonnes settings selon la largeur
-    for (const breakpoint in iframeSettings) {
-        if (breakpoint !== 'default' && width <= parseInt(breakpoint)) {
-            settings = iframeSettings[breakpoint];
-            break;
-        }
+    // Utiliser les settings selon la largeur d'écran
+    if (width <= 768) {
+        settings = iframeSettings[768];
+    } else if (width <= 945) {
+        settings = iframeSettings[945];
     }
     
     // Appliquer les styles
@@ -32,22 +28,13 @@ function adaptContributionsIframe() {
         maxWidth: settings.maxWidth,
         width: settings.width || '100%'
     });
-    
-    // Ajustement spécial pour 481-520px
-    if (width >= 481 && width <= 520) {
-        iframe.style.height = '125px';
-        iframe.style.maxWidth = '310px';
-    }
 }
 
 // Gestion des onglets de projets
 function initProjectTabs() {
-    const tabButtons = document.querySelectorAll('.tab-button');
-    
-    tabButtons.forEach(button => {
+    document.querySelectorAll('.tab-button').forEach(button => {
         button.addEventListener('click', () => {
-            const projectId = button.dataset.project;
-            switchProject(projectId);
+            switchProject(button.dataset.project);
         });
     });
     
@@ -56,25 +43,21 @@ function initProjectTabs() {
 }
 
 function switchProject(projectId) {
-    // Désactiver tous les boutons et panneaux
-    document.querySelectorAll('.tab-button').forEach(btn => 
-        btn.classList.remove('active')
-    );
-    document.querySelectorAll('.project-panel').forEach(panel => 
-        panel.classList.remove('active')
+    // Désactiver tous les éléments actifs
+    document.querySelectorAll('.tab-button, .project-panel').forEach(el => 
+        el.classList.remove('active')
     );
     
-    // Activer le bouton et panneau sélectionnés
+    // Activer les éléments sélectionnés
     const activeButton = document.querySelector(`[data-project="${projectId}"]`);
     const activePanel = document.getElementById(projectId);
     
-    if (activeButton) activeButton.classList.add('active');
-    if (activePanel) activePanel.classList.add('active');
+    activeButton?.classList.add('active');
+    activePanel?.classList.add('active');
 }
 
 function showProject(projectId) {
-    const panel = document.getElementById(projectId);
-    if (panel) panel.classList.add('active');
+    document.getElementById(projectId)?.classList.add('active');
 }
 
 // Animation des sections au scroll
@@ -91,23 +74,15 @@ function handleSectionVisibility() {
     });
 }
 
-// Event listeners
-window.addEventListener('resize', adaptContributionsIframe);
-window.addEventListener('scroll', handleSectionVisibility);
-
-// Initialisation au chargement
+// Event listeners et initialisation
 document.addEventListener('DOMContentLoaded', () => {
     adaptContributionsIframe();
     initProjectTabs();
     
     // Animations retardées pour les sections
-    setTimeout(() => {
-        const projectsSection = document.querySelector('.projects');
-        if (projectsSection) projectsSection.classList.add('visible');
-    }, 1000);
-    
-    setTimeout(() => {
-        const educationSection = document.querySelector('.education');
-        if (educationSection) educationSection.classList.add('visible');
-    }, 1200);
+    setTimeout(() => document.querySelector('.projects')?.classList.add('visible'), 1000);
+    setTimeout(() => document.querySelector('.education')?.classList.add('visible'), 1200);
 });
+
+window.addEventListener('resize', adaptContributionsIframe);
+window.addEventListener('scroll', handleSectionVisibility);

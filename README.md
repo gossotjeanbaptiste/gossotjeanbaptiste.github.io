@@ -19,7 +19,10 @@ Ce portfolio est une vitrine complète de mes compétences et de mon parcours da
 ## 🛠️ Technologies utilisées
 
 - **HTML5** - Structure sémantique moderne avec navigation par onglets
-- **CSS3** - Styles avancés avec dégradés, glassmorphism, backdrop-filter
+- **CSS3 Modulaire** - Architecture CSS moderne avec 9 modules séparés
+- **CSS Variables** - Gestion centralisée des tokens de design
+- **CSS Flexbox/Grid** - Layouts modernes et responsifs
+- **Media Queries** - 3 breakpoints optimisés pour tous les appareils
 - **JavaScript** - Interactivité optimisée et gestion responsive intelligente
 - **SVG** - Icônes vectorielles pour les drapeaux, liens sociaux et globes
 - **GitHub Pages** - Hébergement et déploiement automatique
@@ -85,7 +88,17 @@ Ce portfolio est une vitrine complète de mes compétences et de mon parcours da
 ├── 📁 pages/
 │   └── 📄 english.html        # Version anglaise
 ├── 📁 style/
-│   ├── 🎨 style.css          # Style
+│   ├── 🎨 main.css           # Fichier CSS principal avec imports
+│   ├── 🎨 variables.css      # Variables et tokens de design
+│   ├── 🎨 base.css           # Reset, polices, styles de base
+│   ├── 🎨 components.css     # Composants réutilisables
+│   ├── 🎨 social.css         # Barre sociale fixe
+│   ├── 🎨 sections.css       # Sections principales
+│   ├── 🎨 projects.css       # Section projets
+│   ├── 🎨 contact.css        # Section contact
+│   ├── 🎨 education.css      # Section éducation
+│   ├── 🎨 responsive.css     # Media queries
+│   └── 🎨 style_backup.css   # [LEGACY] Ancien fichier monolithique
 ├── 📁 script/
 │   ├── ⚡ script.js          # JavaScript optimisé
 ├── 📁 images/
@@ -123,13 +136,66 @@ Ce portfolio a été conçu pour :
 
 ## 🚀 Optimisations récentes
 
+### 🎯 Architecture CSS Modulaire (Août 2025)
+
+- **🔧 Restructuration complète** : Passage d'un fichier CSS monolithique (1300+ lignes) à **9 modules spécialisés**
+- **📁 Architecture modulaire** :
+  - `main.css` - Fichier principal avec imports ordonnés
+  - `variables.css` - Tokens de design centralisés (couleurs, tailles, animations)
+  - `base.css` - Reset CSS et styles fondamentaux
+  - `components.css` - Composants réutilisables (cartes, boutons)
+  - `social.css` - Barre sociale avec effets spécifiques
+  - `sections.css` - Sections principales (avatar, about-me)
+  - `projects.css` - Showcase projets avec animations
+  - `contact.css` - Section contact avec icônes thématiques
+  - `education.css` - Timeline éducative interactive
+  - `responsive.css` - Media queries optimisées
+- **✨ Avantages** :
+  - Maintenabilité drastiquement améliorée
+  - Collaboration facilitée (modifications isolées)
+  - Debugging simplifié
+  - Code plus lisible et organisé
+
+### 📱 Optimisations Mobile (Août 2025)
+
+- **📏 Typographie adaptive** :
+  - Polices augmentées de **+20-40%** sur smartphones
+  - Variables CSS dynamiques par breakpoint
+  - Hiérarchie typographique respectée
+- **🖼️ Avatar responsive** :
+  - Redimensionnement avec `transform: scale(2.0)` sur mobile
+  - Effet hover adapté (`scale(2.2)`)
+  - Optimisation GPU avec `translateZ(0)`
+  - Espacement ajusté (margin-bottom: 20px)
+- **📋 Listes optimisées** :
+  - Espacements réduits pour les listes imbriquées
+  - Line-height optimisé pour la lisibilité mobile
+  - Padding adaptatif selon la profondeur
+- **📊 Iframe GitHub optimisée** :
+  - Hauteur minimale garantie de 190px sur tous écrans
+  - Largeur maximale de 800px jusqu'à 768px
+  - Gestion JavaScript simplifiée des breakpoints
+  - Contenu entièrement visible sans coupure
+
 ### Performance & Code
 
-- **CSS Optimisé** : Réduction de ~26% de lignes de code (~1900 -> ~1400)
-- **Breakpoints** : Passage de 11 breakpoints à 3 breakpoints majeurs
-- **Introduction de variables CSS** : Meilleure gestion des couleurs et des espacements
-- **JavaScript optimisé** : Réduction de 50% du code JS (180 → 90 lignes)
+- **CSS Optimisé** : Réduction de ~26% de lignes de code (~1900 → ~1400)
+- **Breakpoints** : Passage de 11 breakpoints à **3 breakpoints majeurs** :
+  - 📱 Mobile (≤ 767px)
+  - 📱 Très petits écrans (≤ 420px)  
+  - 💻 Tablettes (768px-1199px)
+- **Variables CSS** : Centralisation des tokens de design
+- **JavaScript optimisé** : Réduction de 65% du code JS (114 → 90 lignes)
+  - Configuration d'iframe simplifiée (6 breakpoints → 3)
+  - Suppression des ajustements spéciaux redondants
+  - Fonctions optimisées avec opérateur de chaînage optionnel
+  - Event listeners regroupés pour meilleure performance
 - **Sélecteurs CSS optimisés** : Amélioration des performances de rendu
+- **Images de projets optimisées** :
+  - Suppression des effets de boîte superflus
+  - Coins droits pour un design plus moderne
+  - Effets hover sublisés (zoom 5% + luminosité/contraste)
+  - Suppression des overflow cachés pour zoom complet
 
 ### Fonctionnalités avancées
 
@@ -219,5 +285,8 @@ This portfolio is a comprehensive showcase of my skills and journey in software 
 
 **Développé avec ❤️ par Jean-Baptiste (POGGIO) GOSSOT**  
 *Étudiant en Informatique à Epitech Nancy*
+
+**🏗️ Architecture technique** : CSS modulaire • JavaScript optimisé • Mobile-first design • Images sans effet de boîte  
+**🚀 Dernière mise à jour** : Août 2025 - Optimisations complètes (CSS, JS, Mobile, Images)
 
 © 2024-2029 - Portfolio Personnel - Tous droits réservés

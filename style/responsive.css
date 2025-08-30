@@ -1,0 +1,417 @@
+/* ================== MEDIA QUERIES - 3 BREAKPOINTS MAJEURS ================== */
+
+/* ===== BREAKPOINT 1: TABLETTES en mode paysage (768px - 1199px) ===== */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .whoami, .contributions, .projects, .contact, .education {
+        padding-right: 20px;
+    }
+    
+    .project-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .project-visual {
+        width: 100%;
+        align-items: center;
+    }
+    
+    .project-image {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        min-height: 200px;
+        align-self: center;
+    }
+    
+    .project-image img {
+        max-height: 250px;
+    }
+    
+    .contact-info {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+/* ===== BREAKPOINT 2: SMARTPHONES et petites tablettes (jusqu'à 767px) ===== */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+    
+    /* Variables spécifiques mobile */
+    :root {
+        --font-xl: 1.8em;
+        --font-lg: 1.5em;
+        --font-md: 1.3em;
+        --font-base: 1.1em;
+        --font-sm: 1em;
+    }
+    
+    /* Sections générales */
+    .whoami, .contributions, .projects, .contact, .education {
+        padding: 15px;
+        margin: 20px 0;
+        min-height: auto;
+    }
+    
+    .contributions {
+        padding: 20px 10px;
+        overflow-x: auto;
+    }
+    
+    .name h1 {
+        font-size: 1.4em;
+        text-align: center;
+        padding: 0 10px;
+    }
+    
+    /* Images */
+    .whoami img,
+    .avatar {
+        transform: translateZ(0) scale(2.0) !important;
+    }
+    
+    .whoami img:hover,
+    .avatar:hover {
+        transform: translateZ(0) scale(2.2) !important;
+    }
+    
+    /* About me */
+    .about-me {
+        max-width: 90%;
+        margin-top: 20px;
+        padding: 15px;
+    }
+    
+    /* Contributions */
+    .contributions iframe {
+        width: 100%;
+        max-width: 750px;
+        height: 220px;
+    }
+    
+    /* Projets */
+    .project-content {
+        min-height: 300px;
+    }
+    
+    .tab-button {
+        padding: 10px 15px;
+        font-size: var(--font-sm);
+    }
+    
+    .tech {
+        padding: 6px 12px;
+        font-size: var(--font-base);
+    }
+    
+    .project-info {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+    
+    .project-visual {
+        width: 100%;
+        align-items: center;
+    }
+    
+    .project-image {
+        width: 100%;
+        height: auto;
+        min-height: 180px;
+        max-height: 200px;
+    }
+    
+    .project-image img {
+        max-height: 200px;
+    }
+    
+    .github-icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    /* Contact */
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .contact-icon img, 
+    .contact-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+    
+    /* Éducation */
+    .timeline::before {
+        left: 18px;
+        width: 3px;
+    }
+    
+    .timeline-item {
+        padding-left: 50px;
+        margin-bottom: 30px;
+    }
+    
+    .timeline-dot {
+        left: 9px;
+        width: 22px;
+        height: 22px;
+        border-width: 4px;
+    }
+    
+    .timeline-content {
+        padding: 20px;
+    }
+    
+    .school-link {
+        top: 12px;
+        right: 12px;
+    }
+    
+    .school-globe {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .diploma {
+        padding: 15px;
+        margin: 15px 0;
+    }
+    
+    /* Réduction des espacements des listes imbriquées sur mobile */
+    .timeline-content li {
+        margin-bottom: 4px;
+        line-height: 1.4;
+    }
+    
+    .timeline-content ul ul {
+        margin-top: 4px;
+        margin-bottom: 0;
+        padding-left: 15px;
+    }
+    
+    .timeline-content ul ul li {
+        margin-bottom: 2px;
+        font-size: 1em;
+    }
+}
+
+/* ===== BREAKPOINT 3: TRÈS PETITS ÉCRANS (jusqu'à 420px) ===== */
+@media screen and (max-width: 420px) {
+    body {
+        font-size: 14px;
+    }
+    
+    /* Variables spécifiques très petits écrans */
+    :root {
+        --font-xl: 1.4em;
+        --font-lg: 1.3em;
+        --font-md: 1.2em;
+        --font-base: 1em;
+        --font-sm: 0.9em;
+    }
+    
+    /* Sections */
+    .whoami, .contributions, .projects, .contact, .education {
+        padding: 10px;
+        margin: 15px 0;
+    }
+    
+    .contributions {
+        padding: 15px 5px;
+        overflow-x: auto;
+    }
+    
+    .name h1 {
+        font-size: 1.2em;
+        padding: 0 5px;
+        word-break: break-word;
+    }
+    
+    /* Images */
+    .whoami img,
+    .avatar {
+        transform: translateZ(0) scale(2.0) !important;
+    }
+    
+    .whoami img:hover,
+    .avatar:hover {
+        transform: translateZ(0) scale(2.2) !important;
+    }
+    
+    /* About me */
+    .about-me {
+        max-width: 95%;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    
+    .about-me h3 {
+        font-size: 1.2em;
+        word-break: break-word;
+    }
+    
+    .about-me p {
+        font-size: 1em;
+        word-break: break-word;
+    }
+    
+    /* Contributions */
+    .contributions iframe {
+        height: 220px;
+        width: 100%;
+        max-width: 750px;
+    }
+    
+    /* Projets */
+    .tab-button {
+        padding: 8px 12px;
+        font-size: 0.9em;
+        border-radius: 20px;
+    }
+    
+    .tech {
+        padding: 5px 10px;
+        font-size: 1em;
+        border-radius: 12px;
+    }
+    
+    .project-info {
+        padding: 15px;
+        gap: 12px;
+        flex-direction: column;
+    }
+    
+    .project-visual {
+        width: 100%;
+        align-items: center;
+    }
+    
+    .project-text h3 {
+        font-size: 1.2em;
+    }
+    
+    .github-icon {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .project-text p {
+        font-size: 1em;
+        line-height: 1.4;
+    }
+    
+    .project-text ul {
+        font-size: 0.9em;
+    }
+    
+    .project-image {
+        min-height: 120px;
+    }
+    
+    .project-image img {
+        max-height: 150px;
+    }
+    
+    /* Contact */
+    .contact-item {
+        padding: 12px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-icon {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    
+    .contact-icon img, 
+    .contact-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .contact-details h3 {
+        font-size: 1.1em;
+    }
+    
+    .contact-details p {
+        font-size: 1em;
+    }
+    
+    /* Éducation */
+    .timeline::before {
+        left: 15px;
+        width: 2px;
+    }
+    
+    .timeline-item {
+        padding-left: 40px;
+        margin-bottom: 25px;
+    }
+    
+    .timeline-dot {
+        left: 7.5px;
+        width: 18px;
+        height: 18px;
+        border-width: 3px;
+    }
+    
+    .timeline-content {
+        padding: 15px;
+    }
+    
+    .school-link {
+        top: 8px;
+        right: 8px;
+    }
+    
+    .school-globe {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .timeline-content h3 {
+        font-size: 1.1em;
+        word-break: break-word;
+    }
+    
+    .timeline-period {
+        font-size: 1em;
+    }
+    
+    .timeline-content li {
+        font-size: 1em;
+        line-height: 1.4;
+        margin-bottom: 2px;
+    }
+    
+    .timeline-content ul ul {
+        margin-top: 2px;
+        margin-bottom: 0;
+        padding-left: 12px;
+    }
+    
+    .timeline-content ul ul li {
+        font-size: 0.9em;
+        margin-bottom: 1px;
+    }
+    
+    .diploma {
+        padding: 10px;
+        margin: 10px 0;
+    }
+    
+    .diploma h4 {
+        font-size: 1.1em;
+    }
+    
+    .diploma p {
+        font-size: 1em;
+    }
+}

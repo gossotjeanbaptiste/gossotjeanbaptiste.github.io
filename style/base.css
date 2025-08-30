@@ -1,0 +1,52 @@
+/* ================== BASE & RESET ================== */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeSpeed;
+    overflow-x: hidden;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        transition-property: transform, opacity, background, border-color, box-shadow, width, height;
+        transition-duration: 0.2s;
+        transition-timing-function: ease;
+    }
+}
+
+@font-face {
+    font-family: "Bitcount";
+    font-weight: 300;
+    src: url("../fonts/BitcountPropSingle-Light.ttf");
+    font-display: swap;
+}
+
+@keyframes spanFadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* ================== LAYOUT GÉNÉRAL ================== */
+body {
+    background: var(--primary-gradient);
+    font-family: "Bitcount", sans-serif;
+    margin: 0;
+    padding: 70px 0 0 0;
+    color: var(--white);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+}
+
+img {
+    will-change: transform;
+    backface-visibility: hidden;
+}
