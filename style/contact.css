@@ -2,7 +2,7 @@
 
 .contact-content {
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     box-sizing: border-box;
 }
 
@@ -26,7 +26,7 @@
     transform: translateZ(0);
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 25px;
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
@@ -50,8 +50,8 @@
 
 .contact-icon img,
 .contact-icon svg {
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
     transition: transform 0.3s ease, filter 0.3s ease;
     cursor: pointer;
 }
@@ -114,7 +114,7 @@
 
 .contact-details p {
     margin: 0;
-    font-size: var(--font-base);
+    font-size: var(--font-md);
     opacity: 0.9;
 }
 

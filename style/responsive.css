@@ -142,8 +142,16 @@
     
     .contact-icon img, 
     .contact-icon svg {
-        width: 24px;
-        height: 24px;
+        width: 32px;
+        height: 32px;
+    }
+    
+    .contact-details h3 {
+        font-size: var(--font-lg);
+    }
+    
+    .contact-details p {
+        font-size: var(--font-ml);
     }
     
     /* Éducation */
@@ -332,16 +340,16 @@
     
     .contact-icon img, 
     .contact-icon svg {
-        width: 20px;
-        height: 20px;
+        width: 24px;
+        height: 24px;
     }
     
     .contact-details h3 {
-        font-size: 1.1em;
+        font-size: var(--font-md);
     }
     
     .contact-details p {
-        font-size: 1em;
+        font-size: var(--font-base);
     }
     
     /* Éducation */
