@@ -154,6 +154,25 @@
         font-size: var(--font-ml);
     }
     
+    /* Languages */
+    .languages-info {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .language-icon img {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .language-details h3 {
+        font-size: var(--font-lg);
+    }
+    
+    .language-details p {
+        font-size: var(--font-ml);
+    }
+    
     /* Éducation */
     .timeline::before {
         left: 18px;
@@ -352,6 +371,20 @@
         font-size: var(--font-base);
     }
     
+    /* Languages */
+    .language-icon img {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .language-details h3 {
+        font-size: var(--font-md);
+    }
+    
+    .language-details p {
+        font-size: var(--font-base);
+    }
+    
     /* Éducation */
     .timeline::before {
         left: 15px;
@@ -421,5 +454,15 @@
     
     .diploma p {
         font-size: 1em;
+    }
+    
+    /* Footer */
+    .footer-line-1,
+    .footer-line-2 {
+        font-size: var(--font-base);
+    }
+    
+    .epitech-logo {
+        height: 18px;
     }
 }
