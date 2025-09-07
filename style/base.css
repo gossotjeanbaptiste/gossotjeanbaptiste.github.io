@@ -12,9 +12,7 @@ html {
 
 @media (prefers-reduced-motion: no-preference) {
     * {
-        transition-property: transform, opacity, background, border-color, box-shadow, width, height;
-        transition-duration: 0.2s;
-        transition-timing-function: ease;
+        transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, width 0.2s ease, height 0.2s ease;
     }
 }
 
@@ -100,4 +98,96 @@ img {
 
 .epitech-link:hover .epitech-logo {
     filter: drop-shadow(0 0 8px var(--white-8));
+}
+
+/* ================== ANIMATIONS CHANGEMENT DE LANGUE ================== */
+body.language-transition-out .name,
+body.language-transition-out .whoami,
+body.language-transition-out .education,
+body.language-transition-out .contributions,
+body.language-transition-out .projects,
+body.language-transition-out .languages,
+body.language-transition-out .contact {
+    animation: languageFadeOut 0.25s ease-out forwards;
+}
+
+body.language-transition-in .name,
+body.language-transition-in .whoami,
+body.language-transition-in .education,
+body.language-transition-in .contributions,
+body.language-transition-in .projects,
+body.language-transition-in .languages,
+body.language-transition-in .contact {
+    animation: languageFadeIn 0.25s ease-in forwards;
+}
+
+@keyframes languageFadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes languageFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body.language-transition-out .social,
+body.language-transition-out .footer,
+body.language-transition-in .social,
+body.language-transition-in .footer {
+    transform: none;
+    opacity: 1;
+    animation: none;
+}
+
+#language-toggle img {
+    transition: transform 0.1s ease;
+}
+
+#language-toggle:hover img {
+    transform: scale(1.1);
+}
+
+#language-toggle img.flag-spinning {
+    animation: flagSpin 0.5s ease-in-out;
+}
+
+@keyframes flagSpin {
+    0% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+    25% {
+        transform: scale(1.1) rotate(90deg);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1.2) rotate(180deg);
+        opacity: 0.3;
+    }
+    75% {
+        transform: scale(1.1) rotate(270deg);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+        opacity: 1;
+    }
+}
+
+#language-toggle:hover img:not(.flag-spinning) {
+    transform: scale(1.1) rotate(5deg);
+    transition: transform 0.3s ease;
 }

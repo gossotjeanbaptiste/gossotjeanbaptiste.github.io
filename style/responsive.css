@@ -70,12 +70,12 @@
     /* Images */
     .whoami img,
     .avatar {
-        transform: translateZ(0) scale(2.0) !important;
+        transform: translateZ(0) scale(2.0);
     }
     
     .whoami img:hover,
     .avatar:hover {
-        transform: translateZ(0) scale(2.2) !important;
+        transform: translateZ(0) scale(2.2);
     }
     
     /* About me */
@@ -263,12 +263,12 @@
     /* Images */
     .whoami img,
     .avatar {
-        transform: translateZ(0) scale(2.0) !important;
+        transform: translateZ(0) scale(2.0);
     }
     
     .whoami img:hover,
     .avatar:hover {
-        transform: translateZ(0) scale(2.2) !important;
+        transform: translateZ(0) scale(2.2);
     }
     
     /* About me */
