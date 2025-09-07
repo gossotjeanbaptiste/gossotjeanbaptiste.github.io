@@ -4,7 +4,7 @@ Bienvenue sur mon portfolio personnel ! Ce site présente mon parcours d'étudia
 
 ## 🚀 Aperçu
 
-Ce portfolio est une vitrine complète de mes compétences et de mon parcours dans le développement informatique. Il présente :
+Ce portfolio est une vitrine complète de mes compétences et de mon parcours dans le développement informatique. Il comprend :
 
 - 👋 Une présentation personnelle interactive
 - 🎓 Timeline éducative avec mon parcours scolaire complet
@@ -97,13 +97,13 @@ Ce portfolio est une vitrine complète de mes compétences et de mon parcours da
 
 ```text
 📦 gossotjeanbaptiste.github.io
-├── 📄 index.html              # Page d'accueil (FR)
+├── 📄 index.html              # Page principale avec système bilingue intégré
 ├── 📁 pages/
-│   └── 📄 english.html        # Version anglaise
+│   └── 📄 english.html        # [LEGACY] Ancienne version anglaise séparée
 ├── 📁 style/
 │   ├── 🎨 main.css           # Fichier CSS principal avec imports
 │   ├── 🎨 variables.css      # Variables et tokens de design
-│   ├── 🎨 base.css           # Reset, polices, styles de base
+│   ├── 🎨 base.css           # Reset, polices, styles de base + animations de langue
 │   ├── 🎨 components.css     # Composants réutilisables
 │   ├── 🎨 social.css         # Barre sociale fixe
 │   ├── 🎨 sections.css       # Sections principales
@@ -114,7 +114,7 @@ Ce portfolio est une vitrine complète de mes compétences et de mon parcours da
 │   ├── 🎨 responsive.css     # Media queries
 │   └── 🎨 style_backup.css   # [LEGACY] Ancien fichier monolithique
 ├── 📁 script/
-│   ├── ⚡ script.js          # JavaScript optimisé
+│   ├── ⚡ script.js          # JavaScript optimisé avec système de langue dynamique
 ├── 📁 images/
 │   ├── 🖼️ avatar.png         # Photo de profil
 │   ├── 🇫🇷 FR.svg            # Drapeau français (avec effets hover)
@@ -249,7 +249,7 @@ Ce portfolio a été conçu pour :
 
 ### 🌐 Portfolio en ligne
 
-- **� Version dynamique** : [gossotjeanbaptiste.github.io](https://gossotjeanbaptiste.github.io/) (Français/Anglais avec changement en temps réel)
+- **🇫🇷/🇬🇧 Version dynamique** : [gossotjeanbaptiste.github.io](https://gossotjeanbaptiste.github.io/) (Français/Anglais avec changement en temps réel)
 - **🇬🇧 Version anglaise legacy** : [gossotjeanbaptiste.github.io/pages/english.html](https://gossotjeanbaptiste.github.io/pages/english.html)
 
 ---
@@ -343,22 +343,25 @@ This portfolio is a comprehensive showcase of my skills and journey in software 
 - Adaptive typography and spacing
 - Mobile-optimized performance
 
-## 🌍 Language Versions
+## 🌍 Dynamic Bilingual System
 
-- **🇫🇷 French Version** : `index.html` - Main version with all features
-- **🇬🇧 English Version** : `pages/english.html` - Complete translation
+- **🇫🇷/🇬🇧 Real-time language switching** : Click on flag to switch instantly
+- **✨ Smooth animations** : Fade-out/fade-in transitions with flag rotation effect
+- **� Synchronized content** : All texts, CV links and interface elements adapt
+- **📱 Responsive** : System works on all devices
+- **⚡ Optimized performance** : Image preloading and GPU transitions
 
 ## 📁 Project Structure
 
 ```text
 📦 gossotjeanbaptiste.github.io
-├── 📄 index.html              # Homepage (FR)
+├── 📄 index.html              # Main page with integrated bilingual system
 ├── 📁 pages/
-│   └── 📄 english.html        # English version
+│   └── 📄 english.html        # [LEGACY] Former separate English version
 ├── 📁 style/
 │   ├── 🎨 main.css           # Main CSS file with imports
 │   ├── 🎨 variables.css      # Variables and design tokens
-│   ├── 🎨 base.css           # Reset, fonts, base styles
+│   ├── 🎨 base.css           # Reset, fonts, base styles + language animations
 │   ├── 🎨 components.css     # Reusable components
 │   ├── 🎨 social.css         # Fixed social bar
 │   ├── 🎨 sections.css       # Main sections
@@ -369,7 +372,7 @@ This portfolio is a comprehensive showcase of my skills and journey in software 
 │   ├── 🎨 responsive.css     # Media queries
 │   └── 🎨 style_backup.css   # [LEGACY] Old monolithic file
 ├── 📁 script/
-│   ├── ⚡ script.js          # Optimized JavaScript
+│   ├── ⚡ script.js          # Optimized JavaScript with dynamic language system
 ├── 📁 images/
 │   ├── 🖼️ avatar.png         # Profile picture
 │   ├── 🇫🇷 FR.svg            # French flag (with hover effects)
@@ -498,8 +501,8 @@ This portfolio was designed to:
 
 ### 🌐 Online Portfolio
 
-- **🇫🇷 French Version**: [gossotjeanbaptiste.github.io](https://gossotjeanbaptiste.github.io/)
-- **🇬🇧 English Version**: [gossotjeanbaptiste.github.io/pages/english.html](https://gossotjeanbaptiste.github.io/pages/english.html)
+- **🇫🇷/🇬🇧 Dynamic Version** : [gossotjeanbaptiste.github.io](https://gossotjeanbaptiste.github.io/) (Français/Anglais avec changement en temps réel)
+- **🇬🇧 English Legacy Version** : [gossotjeanbaptiste.github.io/pages/english.html](https://gossotjeanbaptiste.github.io/pages/english.html)
 
 ---
 
