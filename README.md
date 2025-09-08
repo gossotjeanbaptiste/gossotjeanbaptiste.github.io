@@ -181,12 +181,12 @@ Ce portfolio a été conçu pour :
   - Rotation 360° du drapeau avec effet d'échelle
   - Contenu entièrement synchronisé (textes, liens CV, interface)
   - Préchargement des images pour des transitions instantanées
-- **�️ Gestion d'erreur d'images universelle** :
+- **🛡️ Gestion d'erreur d'images universelle** :
   - Ajout de `onerror="this.src='images/errorpng.png'"` sur toutes les images
   - Gestion de fallback pour 18+ images (social, projets, langues, contact, footer)
   - Images d'erreur affichées sans distorsion visuelle (suppression du flou et effets de luminosité)
   - Expérience utilisateur cohérente même en cas de problème de chargement
-- **�💬 Section Langues** :
+- **💬 Section Langues** :
   - Drapeaux français et anglais avec effets hover tricolores
   - Informations sur les niveaux de langue (Natif, B2)
   - Scores de tests officiels (TEPITECH 740/990)
@@ -235,7 +235,7 @@ Ce portfolio a été conçu pour :
 
 ## 📞 Contact
 
-### � Profil académique
+### 🎓 Profil académique
 
 - **Étudiant** en Informatique à **Epitech Nancy** (2024-2029)
 - **Diplôme visé** : Expert en Technologie de l'Information (Bac+5)
@@ -262,7 +262,7 @@ Ce portfolio a été conçu pour :
 
 # 🇬🇧 English Version
 
-# �🌟 Jean-Baptiste (POGGIO) GOSSOT's Portfolio
+# 🌟 Jean-Baptiste (POGGIO) GOSSOT's Portfolio
 
 Welcome to my personal portfolio! This website showcases my journey as a Computer Science student at Epitech Nancy.
 
@@ -353,7 +353,7 @@ This portfolio is a comprehensive showcase of my skills and journey in software 
 
 - **🇫🇷/🇬🇧 Real-time language switching** : Click on flag to switch instantly
 - **✨ Smooth animations** : Fade-out/fade-in transitions with flag rotation effect
-- **� Synchronized content** : All texts, CV links and interface elements adapt
+- **🎯 Synchronized content** : All texts, CV links and interface elements adapt
 - **📱 Responsive** : System works on all devices
 - **⚡ Optimized performance** : Image preloading and GPU transitions
 
@@ -445,12 +445,12 @@ This portfolio was designed to:
   - 360° flag rotation with scale effect
   - Fully synchronized content (texts, CV links, interface)
   - Image preloading for instant transitions
-- **�️ Universal image error handling** :
+- **🛡️ Universal image error handling** :
   - Added `onerror="this.src='images/errorpng.png'"` to all images
   - Fallback handling for 18+ images (social, projects, languages, contact, footer)
   - Error images displayed without visual distortion (removed blur and brightness effects)
   - Consistent user experience even when loading issues occur
-- **�💬 Languages Section** :
+- **💬 Languages Section** :
   - French and English flags with tricolor hover effects
   - Language proficiency information (Native, B2)
   - Official test scores (TEPITECH 740/990)
