@@ -117,6 +117,7 @@ Ce portfolio est une vitrine complète de mes compétences et de mon parcours da
 │   ├── ⚡ script.js          # JavaScript optimisé avec système de langue dynamique
 ├── 📁 images/
 │   ├── 🖼️ avatar.png         # Photo de profil
+│   ├── 🖼️ avatar_before_gemini.png # [LEGACY] Ancien avatar avant optimisation
 │   ├── 🇫🇷 FR.svg            # Drapeau français (avec effets hover)
 │   ├── 🇬🇧 USUK.svg          # Drapeau anglais (avec effets hover)
 │   ├── 🔗 linkedin_ico.png   # Icône LinkedIn
@@ -180,7 +181,12 @@ Ce portfolio a été conçu pour :
   - Rotation 360° du drapeau avec effet d'échelle
   - Contenu entièrement synchronisé (textes, liens CV, interface)
   - Préchargement des images pour des transitions instantanées
-- **💬 Section Langues** : 
+- **�️ Gestion d'erreur d'images universelle** :
+  - Ajout de `onerror="this.src='images/errorpng.png'"` sur toutes les images
+  - Gestion de fallback pour 18+ images (social, projets, langues, contact, footer)
+  - Images d'erreur affichées sans distorsion visuelle (suppression du flou et effets de luminosité)
+  - Expérience utilisateur cohérente même en cas de problème de chargement
+- **�💬 Section Langues** :
   - Drapeaux français et anglais avec effets hover tricolores
   - Informations sur les niveaux de langue (Natif, B2)
   - Scores de tests officiels (TEPITECH 740/990)
@@ -375,6 +381,7 @@ This portfolio is a comprehensive showcase of my skills and journey in software 
 │   ├── ⚡ script.js          # Optimized JavaScript with dynamic language system
 ├── 📁 images/
 │   ├── 🖼️ avatar.png         # Profile picture
+│   ├── 🖼️ avatar_before_gemini.png # [LEGACY] Old avatar before optimization
 │   ├── 🇫🇷 FR.svg            # French flag (with hover effects)
 │   ├── 🇬🇧 USUK.svg          # English flag (with hover effects)
 │   ├── 🔗 linkedin_ico.png   # LinkedIn icon
@@ -432,12 +439,23 @@ This portfolio was designed to:
 
 ### 🆕 New Features (September 2025)
 
-- **💬 Languages Section**:
+- **🌍 Dynamic bilingual system** :
+  - Real-time language switching without page reload
+  - Smooth fade-out/fade-in animations (250ms each)
+  - 360° flag rotation with scale effect
+  - Fully synchronized content (texts, CV links, interface)
+  - Image preloading for instant transitions
+- **�️ Universal image error handling** :
+  - Added `onerror="this.src='images/errorpng.png'"` to all images
+  - Fallback handling for 18+ images (social, projects, languages, contact, footer)
+  - Error images displayed without visual distortion (removed blur and brightness effects)
+  - Consistent user experience even when loading issues occur
+- **�💬 Languages Section** :
   - French and English flags with tricolor hover effects
   - Language proficiency information (Native, B2)
   - Official test scores (TEPITECH 740/990)
   - Consistent design with contact section
-- **📄 Interactive Footer**:
+- **📄 Interactive Footer** :
   - Copyright and creation information
   - Clickable Epitech logo linking to official website
   - Mobile-adapted typography
@@ -509,8 +527,8 @@ This portfolio was designed to:
 **Développé avec ❤️ par Jean-Baptiste (POGGIO) GOSSOT**  
 *Étudiant en Informatique à Epitech Nancy*
 
-**🏗️ Architecture technique** : CSS modulaire • JavaScript optimisé • Mobile-first design • Section langues interactive • Footer avec lien Epitech  
-**🚀 Dernière mise à jour** : Septembre 2025 - Nouvelles fonctionnalités (Section langues, Footer, Optimisations contact)
+**🏗️ Architecture technique** : CSS modulaire • JavaScript optimisé • Mobile-first design • Section langues interactive • Footer avec lien Epitech • Gestion d'erreur d'images universelle  
+**🚀 Dernière mise à jour** : Septembre 2025 - Gestion d'erreur d'images et optimisations visuelles
 
 © 2024-2029 - Portfolio Personnel - Tous droits réservés
 
@@ -519,7 +537,7 @@ This portfolio was designed to:
 **Developed with ❤️ by Jean-Baptiste (POGGIO) GOSSOT**  
 *Computer Science Student at Epitech Nancy*
 
-**🏗️ Technical Architecture**: Modular CSS • Optimized JavaScript • Mobile-first design • Interactive languages section • Footer with Epitech link  
-**🚀 Last Update**: September 2025 - New features (Languages section, Footer, Contact optimizations)
+**🏗️ Technical Architecture**: Modular CSS • Optimized JavaScript • Mobile-first design • Interactive languages section • Footer with Epitech link • Universal image error handling  
+**🚀 Last Update**: September 2025 - Image error handling and visual optimizations
 
 © 2024-2029 - Personal Portfolio - All rights reserved
