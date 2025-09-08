@@ -76,8 +76,22 @@ function updateLanguageToggleIcon() {
 
 function updateCvLink() {
     const cvLink = document.getElementById('cv-link');
-    if (cvLink) {
-        cvLink.href = cvUrls[currentLanguage];
+    const cvLinkContact = document.getElementById('cv-link-contact');
+    
+    if (currentLanguage === 'en') {
+        if (cvLink) {
+            cvLink.href = 'https://drive.google.com/file/d/1Nyg-jKrza7pqOEhJjLF3ScE-voQ38Rke/view';
+        }
+        if (cvLinkContact) {
+            cvLinkContact.href = 'https://drive.google.com/file/d/1Nyg-jKrza7pqOEhJjLF3ScE-voQ38Rke/view?usp=sharing';
+        }
+    } else {
+        if (cvLink) {
+            cvLink.href = 'https://drive.google.com/file/d/1e2rouL1f6sGtolIy88TSh77ZffeCzXvV/view';
+        }
+        if (cvLinkContact) {
+            cvLinkContact.href = 'https://drive.google.com/file/d/1e2rouL1f6sGtolIy88TSh77ZffeCzXvV/view?usp=sharing';
+        }
     }
 }
 
