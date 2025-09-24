@@ -98,8 +98,6 @@ Ce portfolio est une vitrine complète de mes compétences et de mon parcours da
 ```text
 📦 gossotjeanbaptiste.github.io
 ├── 📄 index.html              # Page principale avec système bilingue intégré
-├── 📁 pages/
-│   └── 📄 english.html        # [LEGACY] Ancienne version anglaise séparée
 ├── 📁 style/
 │   ├── 🎨 main.css           # Fichier CSS principal avec imports
 │   ├── 🎨 variables.css      # Variables et tokens de design
@@ -112,12 +110,10 @@ Ce portfolio est une vitrine complète de mes compétences et de mon parcours da
 │   ├── 🎨 education.css      # Section éducation
 │   ├── 🎨 languages.css      # Section langues
 │   ├── 🎨 responsive.css     # Media queries
-│   └── 🎨 style_backup.css   # [LEGACY] Ancien fichier monolithique
 ├── 📁 script/
 │   ├── ⚡ script.js          # JavaScript optimisé avec système de langue dynamique
 ├── 📁 images/
 │   ├── 🖼️ avatar.png         # Photo de profil
-│   ├── 🖼️ avatar_before_gemini.png # [LEGACY] Ancien avatar avant optimisation
 │   ├── 🇫🇷 FR.svg            # Drapeau français (avec effets hover)
 │   ├── 🇬🇧 USUK.svg          # Drapeau anglais (avec effets hover)
 │   ├── 🔗 linkedin_ico.png   # Icône LinkedIn
@@ -362,8 +358,6 @@ This portfolio is a comprehensive showcase of my skills and journey in software 
 ```text
 📦 gossotjeanbaptiste.github.io
 ├── 📄 index.html              # Main page with integrated bilingual system
-├── 📁 pages/
-│   └── 📄 english.html        # [LEGACY] Former separate English version
 ├── 📁 style/
 │   ├── 🎨 main.css           # Main CSS file with imports
 │   ├── 🎨 variables.css      # Variables and design tokens
@@ -376,12 +370,10 @@ This portfolio is a comprehensive showcase of my skills and journey in software 
 │   ├── 🎨 education.css      # Education section
 │   ├── 🎨 languages.css      # Languages section
 │   ├── 🎨 responsive.css     # Media queries
-│   └── 🎨 style_backup.css   # [LEGACY] Old monolithic file
 ├── 📁 script/
 │   ├── ⚡ script.js          # Optimized JavaScript with dynamic language system
 ├── 📁 images/
 │   ├── 🖼️ avatar.png         # Profile picture
-│   ├── 🖼️ avatar_before_gemini.png # [LEGACY] Old avatar before optimization
 │   ├── 🇫🇷 FR.svg            # French flag (with hover effects)
 │   ├── 🇬🇧 USUK.svg          # English flag (with hover effects)
 │   ├── 🔗 linkedin_ico.png   # LinkedIn icon
