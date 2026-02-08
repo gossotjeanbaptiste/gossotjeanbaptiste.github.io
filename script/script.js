@@ -287,9 +287,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
-    setTimeout(() => document.querySelector('.education')?.classList.add('visible'), 1000);
-    setTimeout(() => document.querySelector('#experiences')?.classList.add('visible'), 1100);
-    setTimeout(() => document.querySelector('.projects')?.classList.add('visible'), 1200);
+    setTimeout(() => {
+        document.getElementById('education')?.classList.add('visible');
+        document.getElementById('experiences')?.classList.add('visible');
+    }, 1000);
+    setTimeout(() => document.querySelector('.projects')?.classList.add('visible'), 1100);
 });
 
 window.addEventListener('resize', adaptContributionsIframe);
