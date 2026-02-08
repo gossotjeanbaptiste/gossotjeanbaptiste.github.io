@@ -28,6 +28,8 @@
 /* 9. Section éducation */
 @import 'education.css';
 
+/* 10. Section expériences professionnelles */
+@import 'experiences.css';
 /* 10. Media queries (DOIT être en dernier pour override) */
 @import 'responsive.css';
 

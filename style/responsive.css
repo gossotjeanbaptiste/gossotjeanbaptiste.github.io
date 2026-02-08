@@ -32,6 +32,17 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
+    
+    /* Carrousel Education - Tablette */
+    .carousel-container {
+        gap: 15px;
+    }
+    
+    .carousel-btn {
+        width: 44px;
+        height: 44px;
+        font-size: 22px;
+    }
 }
 
 /* ===== BREAKPOINT 2: SMARTPHONES et petites tablettes (jusqu'à 767px) ===== */
@@ -456,13 +467,25 @@
         font-size: 1em;
     }
     
-    /* Footer */
-    .footer-line-1,
-    .footer-line-2 {
-        font-size: var(--font-base);
+    /* Carrousel Education - Mobile */
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
     }
     
-    .epitech-logo {
-        height: 18px;
+    .carousel-indicators {
+        gap: 8px;
+    }
+    
+    .indicator {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .indicator.active {
+        width: 24px;
+    }
+    
     }
 }

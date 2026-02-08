@@ -1,4 +1,6 @@
 let currentLanguage = 'fr';
+let educationCarouselIndex = 0;
+let experiencesCarouselIndex = 0;
 
 const flagImages = {
     fr: new Image(),
@@ -122,6 +124,100 @@ function adaptContributionsIframe() {
     });
 }
 
+function initEducationCarousel() {
+    const educationSection = document.getElementById('education');
+    if (!educationSection) return;
+    
+    const timelineItems = educationSection.querySelectorAll('.timeline-item');
+    const prevBtn = document.getElementById('edu-prev');
+    const nextBtn = document.getElementById('edu-next');
+    const indicators = educationSection.querySelectorAll('.indicator');
+    
+    function updateCarousel(index) {
+        // Mettre à jour les items
+        timelineItems.forEach((item, i) => {
+            item.classList.toggle('active', i === index);
+        });
+        
+        // Mettre à jour les indicateurs
+        indicators.forEach((indicator, i) => {
+            indicator.classList.toggle('active', i === index);
+        });
+    }
+    
+    function goToSlide(index) {
+        const totalSlides = timelineItems.length;
+        educationCarouselIndex = (index + totalSlides) % totalSlides;
+        updateCarousel(educationCarouselIndex);
+    }
+    
+    function nextSlide() {
+        goToSlide(educationCarouselIndex + 1);
+    }
+    
+    function prevSlide() {
+        goToSlide(educationCarouselIndex - 1);
+    }
+    
+    // Event listeners
+    if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+    if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+    
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => goToSlide(index));
+    });
+    
+    // Initialiser le première slide
+    updateCarousel(0);
+}
+
+function initExperiencesCarousel() {
+    const experiencesSection = document.getElementById('experiences');
+    if (!experiencesSection) return;
+    
+    const timelineItems = experiencesSection.querySelectorAll('.timeline-item');
+    const prevBtn = document.getElementById('exp-prev');
+    const nextBtn = document.getElementById('exp-next');
+    const indicators = experiencesSection.querySelectorAll('.indicator');
+    
+    function updateCarousel(index) {
+        // Mettre à jour les items
+        timelineItems.forEach((item, i) => {
+            item.classList.toggle('active', i === index);
+        });
+        
+        // Mettre à jour les indicateurs
+        indicators.forEach((indicator, i) => {
+            indicator.classList.toggle('active', i === index);
+        });
+    }
+    
+    function goToSlide(index) {
+        const totalSlides = timelineItems.length;
+        experiencesCarouselIndex = (index + totalSlides) % totalSlides;
+        updateCarousel(experiencesCarouselIndex);
+    }
+    
+    function nextSlide() {
+        goToSlide(experiencesCarouselIndex + 1);
+    }
+    
+    function prevSlide() {
+        goToSlide(experiencesCarouselIndex - 1);
+    }
+    
+    // Event listeners
+    if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+    if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+    
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => goToSlide(index));
+    });
+    
+    // Initialiser le première slide
+    updateCarousel(0);
+}
+
 function initProjectTabs() {
     document.querySelectorAll('.tab-button').forEach(button => {
         button.addEventListener('click', () => {
@@ -179,6 +275,8 @@ function initializeFlagImages() {
 document.addEventListener('DOMContentLoaded', () => {
     adaptContributionsIframe();
     initProjectTabs();
+    initEducationCarousel();
+    initExperiencesCarousel();
     initializeFlagImages();
     
     const languageToggle = document.getElementById('language-toggle');
@@ -189,8 +287,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
-    setTimeout(() => document.querySelector('.projects')?.classList.add('visible'), 1000);
-    setTimeout(() => document.querySelector('.education')?.classList.add('visible'), 1200);
+    setTimeout(() => document.querySelector('.education')?.classList.add('visible'), 1000);
+    setTimeout(() => document.querySelector('#experiences')?.classList.add('visible'), 1100);
+    setTimeout(() => document.querySelector('.projects')?.classList.add('visible'), 1200);
 });
 
 window.addEventListener('resize', adaptContributionsIframe);

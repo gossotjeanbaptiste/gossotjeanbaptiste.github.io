@@ -1,0 +1,108 @@
+/* ================== EXPÉRIENCES PROFESSIONNELLES ================== */
+
+/* Styles généraux pour le carrousel d'expériences */
+#experiences .timeline {
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    flex: 1;
+    overflow: visible;
+}
+
+#experiences .timeline::before {
+    content: none;
+}
+
+#experiences .timeline-item {
+    position: relative;
+    margin-bottom: 0;
+    padding-left: 0;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+}
+
+#experiences .timeline-item.active {
+    opacity: 1;
+    position: relative;
+    pointer-events: auto;
+}
+
+#experiences .timeline-dot {
+    display: none;
+}
+
+#experiences .timeline-content {
+    background: var(--white-1);
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--white-2);
+    transition: var(--transition-smooth);
+    will-change: transform;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    padding: 18px;
+    position: relative;
+}
+
+#experiences .timeline-content:hover {
+    background: var(--white-15);
+    border-color: var(--white-3);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2), 0 0 20px rgba(47, 113, 138, 0.3);
+}
+
+#experiences .timeline-content h3 {
+    font-size: 1.1em;
+    margin: 0 0 10px 0;
+    font-weight: 400;
+}
+
+#experiences .timeline-period {
+    color: var(--white-8);
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+#experiences .experience-company {
+    color: var(--white-6);
+    font-size: 1.1em;
+    margin-bottom: 12px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+#experiences .timeline-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: var(--white-9);
+}
+
+#experiences .timeline-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#experiences .timeline-content li {
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+    color: var(--white-9);
+}
+
+#experiences .timeline-content li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.1em;
+    color: var(--white-7);
+}

@@ -14,7 +14,7 @@
 /* Section whoami */
 .whoami {
     height: auto;
-    min-height: 65vh;
+    min-height: 50vh;
     justify-content: center;
     text-align: center;
 }
@@ -76,13 +76,13 @@
 
 .about-me h3 {
     margin: 0 0 15px 0;
-    font-size: var(--font-xl);
+    font-size: 1.2em;
     font-weight: bold;
 }
 
 .about-me p {
     margin: 0;
-    font-size: var(--font-md);
+    font-size: 0.95em;
     line-height: 1.6;
     text-align: center;
 }

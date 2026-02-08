@@ -1,38 +1,84 @@
 /* ================== ÉDUCATION ================== */
 
-.timeline {
+/* Carrousel Container */
+.carousel-container {
     max-width: 800px;
     width: 100%;
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.carousel-btn {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border: 2px solid var(--white-3);
+    background: var(--white-1);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    color: var(--white);
+    transition: var(--transition-smooth);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+.carousel-btn:hover {
+    background: var(--white-15);
+    border-color: var(--white-5);
+    transform: scale(1.1);
+}
+
+.carousel-btn:active {
+    transform: scale(0.95);
+}
+
+.carousel-btn-prev {
+    order: -1;
+}
+
+.carousel-btn-next {
+    order: 1;
+}
+
+/* Timeline en mode carrousel */
+.timeline {
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    flex: 1;
+    overflow: visible;
+    min-height: 280px;
 }
 
 .timeline::before {
-    content: '';
-    position: absolute;
-    left: 20px;
-    top: 0;
-    bottom: 0;
-    width: 3px;
-    background: linear-gradient(to bottom, var(--white), var(--white-5));
-    border-radius: 2px;
+    content: none;
 }
 
 .timeline-item {
     position: relative;
-    margin-bottom: 40px;
-    padding-left: 60px;
+    margin-bottom: 0;
+    padding-left: 0;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+}
+
+.timeline-item.active {
+    opacity: 1;
+    position: relative;
+    pointer-events: auto;
 }
 
 .timeline-dot {
-    position: absolute;
-    left: 10px;
-    top: 15px;
-    width: 24px;
-    height: 24px;
-    background: var(--white);
-    border-radius: 50%;
-    border: 4px solid #2F718A;
-    box-shadow: 0 0 0 4px var(--white-2);
+    display: none;
 }
 
 .timeline-content {
@@ -44,15 +90,15 @@
     will-change: transform;
     backface-visibility: hidden;
     transform: translateZ(0);
-    padding: 25px;
+    padding: 18px;
     position: relative;
 }
 
 .timeline-content:hover {
     background: var(--white-15);
     border-color: var(--white-3);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2), 0 0 20px rgba(47, 113, 138, 0.3);
 }
 
 .school-link {
@@ -78,14 +124,14 @@
 }
 
 .timeline-content h3 {
-    font-size: 1.4em;
+    font-size: 1.1em;
     margin: 0 0 10px 0;
     font-weight: 400;
 }
 
 .timeline-period {
     color: var(--white-8);
-    font-size: var(--font-md);
+    font-size: 0.9em;
     margin-bottom: 15px;
     font-weight: 300;
 }
@@ -97,7 +143,7 @@
 }
 
 .timeline-content li {
-    font-size: 1.1em;
+    font-size: 0.95em;
     line-height: 1.6;
     margin-bottom: 8px;
     padding-left: 20px;
@@ -148,7 +194,7 @@
 }
 
 .diploma h4 {
-    font-size: 1.3em;
+    font-size: 1em;
     margin: 0 0 8px 0;
     font-weight: 400;
     display: inline-block;
@@ -164,4 +210,32 @@
     margin: 0;
     font-weight: 300;
     line-height: 1.4;
+}
+/* Indicateurs Carrousel */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--white-5);
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    border: 2px solid transparent;
+}
+
+.indicator:hover {
+    background: var(--white-6);
+    transform: scale(1.2);
+}
+
+.indicator.active {
+    background: var(--white);
+    width: 30px;
+    border-radius: 5px;
 }

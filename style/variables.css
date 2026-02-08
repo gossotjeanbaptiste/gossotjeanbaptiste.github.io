@@ -57,10 +57,10 @@
     --transition-fade: opacity 0.8s cubic-bezier(.08,.74,.86,1);
     
     /* Tailles de police */
-    --font-xl: 2em;
-    --font-lg: 1.6em;
-    --font-ml: 1.4em;
-    --font-md: 1.2em;
-    --font-base: 1em;
-    --font-sm: 0.9em;
+    --font-xl: 1.4em;
+    --font-lg: 1.2em;
+    --font-ml: 1.1em;
+    --font-md: 1.05em;
+    --font-base: 0.95em;
+    --font-sm: 0.85em;
 }
