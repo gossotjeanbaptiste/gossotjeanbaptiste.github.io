@@ -11,8 +11,8 @@ flagImages.fr.src = 'images/FR.svg';
 flagImages.en.src = 'images/USUK.svg';
 
 const cvUrls = {
-    fr: 'https://drive.google.com/file/d/1e2rouL1f6sGtolIy88TSh77ZffeCzXvV/view',
-    en: 'https://drive.google.com/file/d/1Nyg-jKrza7pqOEhJjLF3ScE-voQ38Rke/view?usp=sharing'
+    fr: 'https://drive.google.com/file/d/1H5htxjXJdvQahL4jzqzQ7ikkn2V5BqhZ/view?usp=sharing',
+    en: 'https://drive.google.com/file/d/1H5htxjXJdvQahL4jzqzQ7ikkn2V5BqhZ/view?usp=sharing'
 };
 
 function toggleLanguage() {
@@ -82,17 +82,17 @@ function updateCvLink() {
     
     if (currentLanguage === 'en') {
         if (cvLink) {
-            cvLink.href = 'https://drive.google.com/file/d/1Nyg-jKrza7pqOEhJjLF3ScE-voQ38Rke/view';
+            cvLink.href = 'https://drive.google.com/file/d/1H5htxjXJdvQahL4jzqzQ7ikkn2V5BqhZ/view?usp=sharing';
         }
         if (cvLinkContact) {
-            cvLinkContact.href = 'https://drive.google.com/file/d/1Nyg-jKrza7pqOEhJjLF3ScE-voQ38Rke/view?usp=sharing';
+            cvLinkContact.href = 'https://drive.google.com/file/d/1H5htxjXJdvQahL4jzqzQ7ikkn2V5BqhZ/view?usp=sharing';
         }
     } else {
         if (cvLink) {
-            cvLink.href = 'https://drive.google.com/file/d/1e2rouL1f6sGtolIy88TSh77ZffeCzXvV/view';
+            cvLink.href = 'https://drive.google.com/file/d/1H5htxjXJdvQahL4jzqzQ7ikkn2V5BqhZ/view?usp=sharing';
         }
         if (cvLinkContact) {
-            cvLinkContact.href = 'https://drive.google.com/file/d/1e2rouL1f6sGtolIy88TSh77ZffeCzXvV/view?usp=sharing';
+            cvLinkContact.href = 'https://drive.google.com/file/d/1H5htxjXJdvQahL4jzqzQ7ikkn2V5BqhZ/view?usp=sharing';
         }
     }
 }
