@@ -225,7 +225,7 @@ function initProjectTabs() {
         });
     });
     
-    showProject('DM_Web');
+    showProject('Organized');
 }
 
 function switchProject(projectId) {
