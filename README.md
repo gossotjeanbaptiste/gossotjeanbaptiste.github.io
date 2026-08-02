@@ -29,7 +29,6 @@ Ce portfolio est une vitrine complète de mes compétences et de mon parcours da
 - **JavaScript ES6+** - Interactivité optimisée avec système de changement de langue dynamique
 - **SVG** - Icônes vectorielles pour les drapeaux, liens sociaux et globes
 - **GitHub Pages** - Hébergement et déploiement automatique
-- **Bitcount Font** - Police personnalisée pour une identité unique
 
 ## ✨ Fonctionnalités principales
 
@@ -128,7 +127,7 @@ Ce portfolio est une vitrine complète de mes compétences et de mon parcours da
 │   ├── 🖼️ portfolio.png      # Capture Portfolio
 │   └── 🖼️ errorpng.png       # Image d'erreur fallback
 ├── 📁 fonts/
-│   └── 🔤 BitcountPropSingle-Light.ttf # Police Bitcount personnalisée
+│   └── 🔤 Montserrat-VariableFont_wght.ttf # Police Montserrat personnalisée
 ├── 📁 icon/
 │   └── 🌟 portfolio_ico.png           # Favicon du site
 └── 📖 README.md              # Documentation du projet
@@ -289,7 +288,6 @@ This portfolio is a comprehensive showcase of my skills and journey in software 
 - **JavaScript ES6+** - Optimized interactivity with dynamic language switching system
 - **SVG** - Vector icons for flags, social links, and globes
 - **GitHub Pages** - Hosting and automatic deployment
-- **Bitcount Font** - Custom font for unique identity
 
 ## ✨ Key Features
 
@@ -388,7 +386,7 @@ This portfolio is a comprehensive showcase of my skills and journey in software 
 │   ├── 🖼️ portfolio.png      # Portfolio screenshot
 │   └── 🖼️ errorpng.png       # Fallback error image
 ├── 📁 fonts/
-│   └── 🔤 BitcountPropSingle-Light.ttf # Custom Bitcount font
+│   └── 🔤 Montserrat-VariableFont_wght.ttf # Custom Montserrat font
 ├── 📁 icon/
 │   └── 🌟 portfolio_ico.png           # Site favicon
 └── 📖 README.md              # Project documentation
