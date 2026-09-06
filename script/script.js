@@ -1,6 +1,16 @@
-let currentLanguage = 'fr';
+let currentLanguage = localStorage.getItem('lang') || 'fr';
 let educationCarouselIndex = 0;
 let experiencesCarouselIndex = 0;
+let translations = { fr: null, en: null };
+
+async function loadTranslations() {
+    const [fr, en] = await Promise.all([
+        fetch('i18n/fr.json').then(r => r.json()),
+        fetch('i18n/en.json').then(r => r.json())
+    ]);
+    translations.fr = fr;
+    translations.en = en;
+}
 
 const flagImages = {
     fr: new Image(),
@@ -10,11 +20,6 @@ const flagImages = {
 flagImages.fr.src = 'images/FR.svg';
 flagImages.en.src = 'images/USUK.svg';
 
-const cvUrls = {
-    fr: 'https://drive.google.com/file/d/1H5htxjXJdvQahL4jzqzQ7ikkn2V5BqhZ/view?usp=sharing',
-    en: 'https://drive.google.com/file/d/1H5htxjXJdvQahL4jzqzQ7ikkn2V5BqhZ/view?usp=sharing'
-};
-
 function toggleLanguage() {
     const body = document.body;
     
@@ -23,8 +28,8 @@ function toggleLanguage() {
     
     setTimeout(() => {
         currentLanguage = currentLanguage === 'fr' ? 'en' : 'fr';
+        localStorage.setItem('lang', currentLanguage);
         updatePageLanguage();
-        updateCvLink();
         updateDocumentLang();
         
         body.classList.remove('language-transition-out');
@@ -39,19 +44,26 @@ function toggleLanguage() {
 
 // Mettre à jour tous les textes selon la langue
 function updatePageLanguage() {
-    document.querySelectorAll('[data-lang-fr][data-lang-en]').forEach(element => {
-        const text = element.getAttribute(`data-lang-${currentLanguage}`);
-        if (text) {
-            element[element.tagName === 'TITLE' ? 'textContent' : 'innerHTML'] = text;
+    const dict = translations[currentLanguage];
+    if (!dict) return;
+
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        const text = dict[key];
+        if (text === undefined) return;
+        if (element.tagName === 'IMG') {
+            element.alt = text;
+        } else if (element.tagName === 'TITLE') {
+            element.textContent = text;
+        } else {
+            element.innerHTML = text;
         }
     });
-    
-    ['title', 'alt'].forEach(attr => {
-        const prefix = attr === 'title' ? 'data-title-' : 'data-lang-';
-        document.querySelectorAll(`[${prefix}fr][${prefix}en]`).forEach(element => {
-            const value = element.getAttribute(`${prefix}${currentLanguage}`);
-            if (value) element.setAttribute(attr, value);
-        });
+
+    document.querySelectorAll('[data-i18n-title]').forEach(element => {
+        const key = element.getAttribute('data-i18n-title');
+        const text = dict[key];
+        if (text !== undefined) element.title = text;
     });
 }
 
@@ -74,27 +86,6 @@ function updateLanguageToggleIcon() {
         img.style.transform = '';
         img.style.opacity = '';
     }, 500);
-}
-
-function updateCvLink() {
-    const cvLink = document.getElementById('cv-link');
-    const cvLinkContact = document.getElementById('cv-link-contact');
-    
-    if (currentLanguage === 'en') {
-        if (cvLink) {
-            cvLink.href = 'https://drive.google.com/file/d/1H5htxjXJdvQahL4jzqzQ7ikkn2V5BqhZ/view?usp=sharing';
-        }
-        if (cvLinkContact) {
-            cvLinkContact.href = 'https://drive.google.com/file/d/1H5htxjXJdvQahL4jzqzQ7ikkn2V5BqhZ/view?usp=sharing';
-        }
-    } else {
-        if (cvLink) {
-            cvLink.href = 'https://drive.google.com/file/d/1H5htxjXJdvQahL4jzqzQ7ikkn2V5BqhZ/view?usp=sharing';
-        }
-        if (cvLinkContact) {
-            cvLinkContact.href = 'https://drive.google.com/file/d/1H5htxjXJdvQahL4jzqzQ7ikkn2V5BqhZ/view?usp=sharing';
-        }
-    }
 }
 
 function updateDocumentLang() {
@@ -272,13 +263,21 @@ function initializeFlagImages() {
     setTimeout(() => document.body.removeChild(tempContainer), 100);
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
     adaptContributionsIframe();
     initProjectTabs();
     initEducationCarousel();
     initExperiencesCarousel();
     initializeFlagImages();
-    
+
+    await loadTranslations();
+    if (currentLanguage === 'en') {
+        updatePageLanguage();
+        updateDocumentLang();
+        const img = document.getElementById('language-toggle')?.querySelector('img');
+        if (img) img.src = flagImages.en.src;
+    }
+
     const languageToggle = document.getElementById('language-toggle');
     if (languageToggle) {
         languageToggle.addEventListener('click', (e) => {

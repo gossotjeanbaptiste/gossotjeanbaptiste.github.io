@@ -1,6 +1,6 @@
 # 🌟 Portfolio de Jean-Baptiste (POGGIO) GOSSOT
 
-Bienvenue sur mon portfolio personnel ! Ce site présente mon parcours d'étudiant en informatique à Epitech Nancy.
+Bienvenue sur mon portfolio personnel ! Ce site présente mon parcours et ma recherche active d'un poste de technicien informatique en CDI.
 
 ## 🚀 Aperçu
 
@@ -20,7 +20,7 @@ Ce portfolio est une vitrine complète de mes compétences et de mon parcours da
 
 ## 🛠️ Technologies utilisées
 
-- **HTML5** - Structure sémantique moderne avec navigation par onglets et attributs data-lang pour le bilinguisme
+- **HTML5** - Structure sémantique moderne avec navigation par onglets et système `data-i18n` pour le bilinguisme
 - **CSS3 Modulaire** - Architecture CSS moderne avec 9 modules séparés
 - **CSS Variables** - Gestion centralisée des tokens de design
 - **CSS Flexbox/Grid** - Layouts modernes et responsifs
@@ -88,7 +88,8 @@ Ce portfolio est une vitrine complète de mes compétences et de mon parcours da
 
 - **🇫🇷/🇬🇧 Changement de langue en temps réel** : Clic sur le drapeau pour basculer instantanément
 - **✨ Animations fluides** : Transitions de fade-out/fade-in avec effet de rotation du drapeau
-- **🎯 Contenu synchronisé** : Tous les textes, liens CV et éléments d'interface s'adaptent
+- **🎯 Contenu centralisé** : Tous les textes proviennent de `i18n/fr.json` et `i18n/en.json`, une seule source par langue
+- **💾 Préférence mémorisée** : Le choix de langue est conservé d'une visite à l'autre (localStorage)
 - **📱 Responsive** : Système fonctionnel sur tous les appareils
 - **⚡ Performance optimisée** : Préchargement des images et transitions GPU
 
@@ -111,6 +112,9 @@ Ce portfolio est une vitrine complète de mes compétences et de mon parcours da
 │   ├── 🎨 responsive.css     # Media queries
 ├── 📁 script/
 │   ├── ⚡ script.js          # JavaScript optimisé avec système de langue dynamique
+├── 📁 i18n/
+│   ├── 🇫🇷 fr.json           # Traductions françaises (source unique)
+│   ├── 🇬🇧 en.json           # Traductions anglaises (source unique)
 ├── 📁 images/
 │   ├── 🖼️ avatar.png         # Photo de profil
 │   ├── 🇫🇷 FR.svg            # Drapeau français (avec effets hover)
@@ -146,6 +150,14 @@ Ce portfolio a été conçu pour :
 - **Servir de vitrine technologique** avec des effets visuels avancés
 
 ## 🚀 Optimisations récentes
+
+### 🌐 Refonte du système de traduction (Septembre 2026)
+
+- **📦 Externalisation des traductions** : Passage des attributs `data-lang-fr`/`data-lang-en` à un système `data-i18n` + fichiers JSON dédiés (`i18n/fr.json`, `i18n/en.json`)
+- **✂️ Suppression des doublons** : Chaque texte n'existe plus qu'une seule fois par langue, au lieu d'être dupliqué entre le HTML et ses attributs
+- **💾 Mémorisation de la langue** : La langue choisie est sauvegardée via `localStorage` et restaurée à la visite suivante
+- **🧹 Nettoyage du JavaScript** : Suppression de `updateCvLink()`, devenue inutile (le lien CV est identique dans les deux langues)
+- **🎯 Mise à jour du profil** : Passage du statut étudiant à la recherche active d'un poste de technicien informatique en CDI
 
 ### 🎯 Architecture CSS Modulaire (Août 2025)
 
@@ -230,21 +242,21 @@ Ce portfolio a été conçu pour :
 
 ## 📞 Contact
 
-### 🎓 Profil académique
+### 💻 Profil professionnel
 
-- **Étudiant** en Informatique à **Epitech Nancy** (2024-2029)
-- **Diplôme visé** : Expert en Technologie de l'Information (Bac+5)
-- **Spécialisation** : Ingénierie Logiciel RNCP Niveau 7
+- **Technicien informatique** en recherche active d'un poste en CDI
+- **Zones recherchées** : Lunéville, Nancy, Metz, Saint-Dié-des-Vosges, Strasbourg
+- **Formation** : Expert en Technologie de l'Information, Epitech Nancy (2024-2026)
 
 ### 💼 Liens professionnels
 
 - **💼 LinkedIn** : [Jean-Baptiste (POGGIO) GOSSOT](https://www.linkedin.com/in/jean-baptiste-gossot-137589247/)
 - **🐙 GitHub** : [gossotjeanbaptiste](https://github.com/gossotjeanbaptiste)
-- **📄 CV** : [Voir mon CV](https://drive.google.com/file/d/1e2rouL1f6sGtolIy88TSh77ZffeCzXvV/view?usp=sharing)
+- **📄 CV** : [Voir mon CV](https://drive.google.com/file/d/1H5htxjXJdvQahL4jzqzQ7ikkn2V5BqhZ/view?usp=sharing)
 
 ### 📧 Coordonnées
 
-- **📧 Email** : [jean-baptiste.gossot@epitech.eu](mailto:jean-baptiste.gossot@epitech.eu)
+- **📧 Email** : [gossotjeanbaptiste@gmail.com](mailto:gossotjeanbaptiste@gmail.com)
 - **📱 Téléphone** : [+33 6 38 40 44 06](tel:+33638404406)
 - **📍 Adresse** : 23Bis Rue du Général Leclerc, 54300 Lunéville
 
@@ -259,7 +271,7 @@ Ce portfolio a été conçu pour :
 
 # 🌟 Jean-Baptiste (POGGIO) GOSSOT's Portfolio
 
-Welcome to my personal portfolio! This website showcases my journey as a Computer Science student at Epitech Nancy.
+Welcome to my personal portfolio! This website showcases my background and my active search for a full-time (permanent contract) IT technician position.
 
 ## 🚀 Overview
 
@@ -279,7 +291,7 @@ This portfolio is a comprehensive showcase of my skills and journey in software 
 
 ## 🛠️ Technologies Used
 
-- **HTML5** - Modern semantic structure with tab navigation and data-lang attributes for bilingualism
+- **HTML5** - Modern semantic structure with tab navigation and a `data-i18n` system for bilingualism
 - **Modular CSS3** - Modern CSS architecture with 9 separate modules
 - **CSS Variables** - Centralized design token management
 - **CSS Flexbox/Grid** - Modern and responsive layouts
@@ -347,7 +359,8 @@ This portfolio is a comprehensive showcase of my skills and journey in software 
 
 - **🇫🇷/🇬🇧 Real-time language switching** : Click on flag to switch instantly
 - **✨ Smooth animations** : Fade-out/fade-in transitions with flag rotation effect
-- **🎯 Synchronized content** : All texts, CV links and interface elements adapt
+- **🎯 Centralized content** : All texts come from `i18n/fr.json` and `i18n/en.json`, a single source per language
+- **💾 Remembered preference** : Language choice persists across visits (localStorage)
 - **📱 Responsive** : System works on all devices
 - **⚡ Optimized performance** : Image preloading and GPU transitions
 
@@ -370,6 +383,9 @@ This portfolio is a comprehensive showcase of my skills and journey in software 
 │   ├── 🎨 responsive.css     # Media queries
 ├── 📁 script/
 │   ├── ⚡ script.js          # Optimized JavaScript with dynamic language system
+├── 📁 i18n/
+│   ├── 🇫🇷 fr.json           # French translations (single source)
+│   ├── 🇬🇧 en.json           # English translations (single source)
 ├── 📁 images/
 │   ├── 🖼️ avatar.png         # Profile picture
 │   ├── 🇫🇷 FR.svg            # French flag (with hover effects)
@@ -405,6 +421,14 @@ This portfolio was designed to:
 - **Serve as a technology showcase** with advanced visual effects
 
 ## 🚀 Recent Optimizations
+
+### 🌐 Translation System Overhaul (September 2026)
+
+- **📦 Externalized translations**: Moved from `data-lang-fr`/`data-lang-en` attributes to a `data-i18n` system with dedicated JSON files (`i18n/fr.json`, `i18n/en.json`)
+- **✂️ Removed duplication**: Each text now exists only once per language, instead of being duplicated between the HTML and its attributes
+- **💾 Language memory**: The selected language is saved via `localStorage` and restored on the next visit
+- **🧹 JavaScript cleanup**: Removed `updateCvLink()`, no longer needed since the CV link is identical in both languages
+- **🎯 Profile update**: Moved from student status to actively seeking a full-time IT technician position
 
 ### 🎯 Modular CSS Architecture (August 2025)
 
@@ -489,21 +513,21 @@ This portfolio was designed to:
 
 ## 📞 Contact
 
-### 🎓 Academic Profile
+### 💻 Professional Profile
 
-- **Computer Science Student** at **Epitech Nancy** (2024-2029)
-- **Target Degree**: Expert in Information Technology (Bachelor+5)
-- **Specialization**: Software Engineering RNCP Level 7
+- **IT Technician** actively seeking a full-time (permanent contract) position
+- **Target areas**: Lunéville, Nancy, Metz, Saint-Dié-des-Vosges, Strasbourg
+- **Education**: Expert in Information Technology, Epitech Nancy (2024-2026)
 
 ### 💼 Professional Links
 
 - **💼 LinkedIn**: [Jean-Baptiste (POGGIO) GOSSOT](https://www.linkedin.com/in/jean-baptiste-gossot-137589247/)
 - **🐙 GitHub**: [gossotjeanbaptiste](https://github.com/gossotjeanbaptiste)
-- **📄 Resume**: [View my CV](https://drive.google.com/file/d1Nyg-jKrza7pqOEhJjLF3ScE-voQ38Rke/view?usp=sharing)
+- **📄 Resume**: [View my CV](https://drive.google.com/file/d/1H5htxjXJdvQahL4jzqzQ7ikkn2V5BqhZ/view?usp=sharing)
 
 ### 📧 Contact Information
 
-- **📧 Email**: [jean-baptiste.gossot@epitech.eu](mailto:jean-baptiste.gossot@epitech.eu)
+- **📧 Email**: [gossotjeanbaptiste@gmail.com](mailto:gossotjeanbaptiste@gmail.com)
 - **📱 Phone**: [+33 6 38 40 44 06](tel:+33638404406)
 - **📍 Address**: 23Bis Rue du Général Leclerc, 54300 Lunéville, France
 
@@ -515,19 +539,19 @@ This portfolio was designed to:
 ---
 
 **Développé avec ❤️ par Jean-Baptiste (POGGIO) GOSSOT**  
-*Étudiant en Informatique à Epitech Nancy*
+*Technicien Informatique en recherche de poste (CDI)*
 
-**🏗️ Architecture technique** : CSS modulaire • JavaScript optimisé • Mobile-first design • Section langues interactive • Footer avec lien Epitech • Gestion d'erreur d'images universelle  
-**🚀 Dernière mise à jour** : Septembre 2025 - Gestion d'erreur d'images et optimisations visuelles
+**🏗️ Architecture technique** : CSS modulaire • JavaScript optimisé • Système i18n centralisé (JSON) • Mobile-first design • Section langues interactive • Footer avec lien Epitech • Gestion d'erreur d'images universelle  
+**🚀 Dernière mise à jour** : Septembre 2026 - Refonte du système de traduction (i18n JSON) et mise à jour du profil professionnel
 
 © 2024-2029 - Portfolio Personnel - Tous droits réservés
 
 ---
 
 **Developed with ❤️ by Jean-Baptiste (POGGIO) GOSSOT**  
-*Computer Science Student at Epitech Nancy*
+*IT Technician seeking a full-time (permanent contract) position*
 
-**🏗️ Technical Architecture**: Modular CSS • Optimized JavaScript • Mobile-first design • Interactive languages section • Footer with Epitech link • Universal image error handling  
-**🚀 Last Update**: September 2025 - Image error handling and visual optimizations
+**🏗️ Technical Architecture**: Modular CSS • Optimized JavaScript • Centralized JSON i18n system • Mobile-first design • Interactive languages section • Footer with Epitech link • Universal image error handling  
+**🚀 Last Update**: September 2026 - Translation system overhaul (JSON i18n) and professional profile update
 
 © 2024-2029 - Personal Portfolio - All rights reserved

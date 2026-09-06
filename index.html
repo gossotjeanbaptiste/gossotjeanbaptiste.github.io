@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title data-lang-fr="Portfolio de Jean-Baptiste GOSSOT" data-lang-en="Jean-Baptiste GOSSOT's Portfolio">Portfolio de Jean-Baptiste GOSSOT</title>
+    <title data-i18n="meta.title">Portfolio de Jean-Baptiste GOSSOT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=0.5">
     <meta charset="UTF-8">
     
@@ -28,8 +28,8 @@
 </head>
 <body>
     <div class="social">
-        <a href="#" id="language-toggle"><img src="images/USUK.svg" alt="English Version" data-lang-fr="Version Anglaise" data-lang-en="French Version" onerror="this.src='images/errorpng.png'"></a>
-        <a href="https://drive.google.com/file/d/1H5htxjXJdvQahL4jzqzQ7ikkn2V5BqhZ/view?usp=sharing" target="_blank" id="cv-link"><img src="images/drive_ico.png" alt="View CV" data-lang-fr="Voir CV" data-lang-en="View Resume" onerror="this.src='images/errorpng.png'"></a>
+        <a href="#" id="language-toggle"><img src="images/USUK.svg" alt="English Version" data-i18n="nav.langToggleAlt" onerror="this.src='images/errorpng.png'"></a>
+        <a href="https://drive.google.com/file/d/1H5htxjXJdvQahL4jzqzQ7ikkn2V5BqhZ/view?usp=sharing" target="_blank" id="cv-link"><img src="images/drive_ico.png" alt="View CV" data-i18n="nav.cvLinkAlt" onerror="this.src='images/errorpng.png'"></a>
         <a href="https://www.linkedin.com/in/jean-baptiste-gossot-137589247/" target="_blank"><img src="images/linkedin_ico.png" alt="LinkedIn" onerror="this.src='images/errorpng.png'"></a>
         <a href="https://github.com/gossotjeanbaptiste" target="_blank"><img src="images/github_ico.svg" alt="GitHub" onerror="this.src='images/errorpng.png'"></a>
     </div>
@@ -39,16 +39,16 @@
     <div class="whoami section-base">
         <span><span><img src="images/avatar.png" alt="avatar" class="avatar" onerror="this.src='images/errorpng.png'"></span></span>
         <br>
-        <h1 data-lang-fr="Bonjour, je suis <span><span>Jean-Baptiste (POGGIO) GOSSOT</span></span>" data-lang-en="Hi, I am <span><span>Jean-Baptiste (POGGIO) GOSSOT</span></span>">Bonjour, je suis <span><span>Jean-Baptiste (POGGIO) GOSSOT</span></span></h1>
-        <h2 data-lang-fr="Étudiant en 3ème année du Programme Bachelor à Epitech Nancy" data-lang-en="Student in 3rd year of the Bachelor program at Epitech Nancy">Étudiant en 3ème année du Programme Bachelor à Epitech Nancy</h2>
-        <h4 data-lang-fr="Actuellement en recherche d'une alternance pour ma 3eme année." data-lang-en="Currently seeking a work-study program for my third year.">Actuellement en recherche d'une alternance pour ma 3eme année.</h4>
+        <h1 data-i18n="hero.greeting">Bonjour, je suis <span><span>Jean-Baptiste (POGGIO) GOSSOT</span></span></h1>
+        <h2 data-i18n="hero.role">Technicien Informatique</h2>
+        <h4 data-i18n="hero.tagline">Actuellement en recherche d'un poste de technicien informatique en CDI sur Lunéville, Nancy, Metz, Saint-Dié-des-Vosges et Strasbourg.</h4>
         <div class="about-me">
-            <h3 data-lang-fr="À propos de moi" data-lang-en="About Me">À propos de moi</h3>
-            <p data-lang-fr="J'ai 20 ans, je suis passionné d'informatique depuis l'âge de 7 ans. Mon parcours a commencé par l'optimisation de logiciels pour améliorer les performances de Minecraft sur PC. Cette première expérience m'a ensuite amené à explorer le hardware, avant de revenir vers ma passion première : le développement logiciel." data-lang-en="I'm 20 years old, I've been passionate about computer science since I was 7. My journey began with software optimization to improve Minecraft performance on PC. This first experience then led me to explore hardware, before returning to my primary passion: software development.">J'ai 20 ans, je suis passionné d'informatique depuis l'âge de 7 ans. Mon parcours a commencé par l'optimisation de logiciels pour améliorer les performances de Minecraft sur PC. Cette première expérience m'a ensuite amené à explorer le hardware, avant de revenir vers ma passion première : le développement logiciel.</p>
+            <h3 data-i18n="hero.aboutTitle">À propos de moi</h3>
+            <p data-i18n="hero.aboutText">J'ai 20 ans, je suis passionné d'informatique depuis l'âge de 7 ans. Mon parcours a commencé par l'optimisation de logiciels pour améliorer les performances de Minecraft sur PC. Cette première expérience m'a ensuite amené à explorer le hardware, avant de revenir vers ma passion première : le développement logiciel.</p>
         </div>
     </div>
     <div class="education section-base fade-in-section" id="education">
-        <h2 class="section-title" data-lang-fr="Parcours scolaire" data-lang-en="Educational Background">Parcours scolaire</h2>
+        <h2 class="section-title" data-i18n="education.sectionTitle">Parcours scolaire</h2>
         <div class="carousel-container">
             <button class="carousel-btn carousel-btn-prev" id="edu-prev" aria-label="Précédent">‹</button>
             <div class="timeline">
@@ -56,21 +56,20 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <a href="https://www.epitech.eu/ecole-informatique-nancy/" target="_blank" class="school-link"
-                        data-title-fr="Site officiel d'Epitech" data-title-en="Official Epitech website">
-                        <img src="images/globe_ico.svg" alt="Site web Epitech" data-lang-fr="Site web Epitech" data-lang-en="Epitech website" class="school-globe" onerror="this.src='images/errorpng.png'">
+                        data-i18n-title="education.epitech.linkTitle">
+                        <img src="images/globe_ico.svg" alt="Site web Epitech" data-i18n="education.epitech.globeAlt" class="school-globe" onerror="this.src='images/errorpng.png'">
                     </a>
-                    <h3>EPITECH, NANCY</h3>
-                    <div class="timeline-period">2024 - 2027</div>
+                    <h3>EPITECH, NANCY, Programme Grande École (PGE)</h3>
+                    <div class="timeline-period">2024 - 2026</div>
                     <div class="diploma">
-                        <h4 data-lang-fr="Diplôme" data-lang-en="Degree">Diplôme</h4>
-                        <p data-lang-fr="Diplome Bachelor Développement Full Stack" data-lang-en="Bachelor's Degree in Full Stack Development">Diplôme Bachelor Développement Full Stack</p>
-                        <p data-lang-fr="Développeur Concepteur d'Applications (RNCP Niv 6)" data-lang-en="Developer Designer of Applications (RNCP Level 6)">Développeur Concepteur d'Applications (RNCP Niv 6)</p>
+                        <h4 data-i18n="education.epitech.diplomaLabel">Diplôme</h4>
+                        <p data-i18n="education.epitech.diploma1">Expert en Ingénieurie Logiciel (RNCP Niv 7)</p>
+                        <p data-i18n="education.epitech.diploma2">Expert en Ingénieurie Logiciel (RNCP Niv 7)</p>
                     </div>
                     <ul>
-                        <li data-lang-fr="Deux premières années dans le PGE and la troisième année dans le Bachelor" data-lang-en="Two first years in the Grande École program and the third year in the Bachelor program">Deux premières années dans le PGE et la troisième année dans le Bachelor</li>
-                        <li data-lang-fr="Apprentissage de la programmation" data-lang-en="Programming learning">Apprentissage de la programmation</li>
-                        <li data-lang-fr="Pédagogie active par projets" data-lang-en="Active project-based pedagogy">Pédagogie active par projets</li>
-                        <li data-lang-fr="Adaptabilité, autonomie et travail en groupe" data-lang-en="Adaptability, autonomy and teamwork">Adaptabilité, autonomie et travail en groupe</li>
+                        <li data-i18n="education.epitech.li1">Apprentissage de la programmation</li>
+                        <li data-i18n="education.epitech.li2">Pédagogie active par projets</li>
+                        <li data-i18n="education.epitech.li3">Adaptabilité, autonomie et travail en groupe</li>
                     </ul>
                 </div>
             </div>
@@ -78,25 +77,25 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <a href="https://lyc-bichat.monbureaunumerique.fr/" target="_blank" class="school-link"
-                        data-title-fr="Site officiel du Lycée E. Bichât" data-title-en="Official E. Bichât High School website">
-                        <img src="images/globe_ico.svg" alt="Site web Lycée Bichât" data-lang-fr="Site web Lycée Bichât" data-lang-en="Bichât High School website" class="school-globe" onerror="this.src='images/errorpng.png'">
+                        data-i18n-title="education.lycee.linkTitle">
+                        <img src="images/globe_ico.svg" alt="Site web Lycée Bichât" data-i18n="education.lycee.globeAlt" class="school-globe" onerror="this.src='images/errorpng.png'">
                     </a>
-                    <h3 data-lang-fr="LYCÉE E. BICHÂT, LUNÉVILLE" data-lang-en="E. BICHÂT HIGH SCHOOL, LUNÉVILLE">LYCÉE E. BICHÂT, LUNÉVILLE</h3>
+                    <h3 data-i18n="education.lycee.title">LYCÉE E. BICHÂT, LUNÉVILLE</h3>
                     <div class="timeline-period">2021 - 2024</div>
                     <div class="diploma">
-                        <h4 data-lang-fr="Diplôme" data-lang-en="Degree">Diplôme</h4>
-                        <p data-lang-fr="Baccalauréat Général" data-lang-en="General Baccalaureate">Baccalauréat Général</p>
+                        <h4 data-i18n="education.lycee.diplomaLabel">Diplôme</h4>
+                        <p data-i18n="education.lycee.diploma">Baccalauréat Général</p>
                     </div>
                     <ul>
-                        <li><span data-lang-fr="Spécialités :" data-lang-en="Specializations:">Spécialités :</span>
+                        <li><span data-i18n="education.lycee.specialtiesLabel">Spécialités :</span>
                             <ul>
-                                <li data-lang-fr="NSI (Numérique Sciences de l'Informatique)" data-lang-en="NSI (Digital Sciences and Computer Science)">NSI (Numérique Sciences de l'Informatique)</li>
-                                <li data-lang-fr="Mathématiques" data-lang-en="Mathematics">Mathématiques</li>
+                                <li data-i18n="education.lycee.spec1">NSI (Numérique Sciences de l'Informatique)</li>
+                                <li data-i18n="education.lycee.spec2">Mathématiques</li>
                             </ul>
                         </li>
-                        <li><span data-lang-fr="Enseignement complémentaire" data-lang-en="Complementary teaching">Enseignement complémentaire</span>
+                        <li><span data-i18n="education.lycee.complementaryLabel">Enseignement complémentaire</span>
                             <ul>
-                                <li data-lang-fr="Mathématiques Expertes" data-lang-en="Expert Mathematics">Mathématiques Expertes</li>
+                                <li data-i18n="education.lycee.comp1">Mathématiques Expertes</li>
                             </ul>
                         </li>
                     </ul>
@@ -106,18 +105,18 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <a href="https://clg-bichat.monbureaunumerique.fr/" target="_blank" class="school-link"
-                        data-title-fr="Site officiel du Collège E. Bichât" data-title-en="Official E. Bichât Middle School website">
-                        <img src="images/globe_ico.svg" alt="Site web Collège Bichât" data-lang-fr="Site web Collège Bichât" data-lang-en="Bichât Middle School website" class="school-globe" onerror="this.src='images/errorpng.png'">
+                        data-i18n-title="education.college.linkTitle">
+                        <img src="images/globe_ico.svg" alt="Site web Collège Bichât" data-i18n="education.college.globeAlt" class="school-globe" onerror="this.src='images/errorpng.png'">
                     </a>
-                    <h3 data-lang-fr="COLLÈGE E. BICHÂT, LUNÉVILLE" data-lang-en="E. BICHÂT MIDDLE SCHOOL, LUNÉVILLE">COLLÈGE E. BICHÂT, LUNÉVILLE</h3>
+                    <h3 data-i18n="education.college.title">COLLÈGE E. BICHÂT, LUNÉVILLE</h3>
                     <div class="timeline-period">2017 - 2021</div>
                     <div class="diploma">
-                        <h4 data-lang-fr="Diplôme" data-lang-en="Degree">Diplôme</h4>
-                        <p data-lang-fr="Brevet des Collèges, Section Général, Mention Assez-Bien" data-lang-en="Middle School Certificate, General Section, Honors">Brevet des Collèges, Section Général, Mention Assez-Bien</p>
+                        <h4 data-i18n="education.college.diplomaLabel">Diplôme</h4>
+                        <p data-i18n="education.college.diploma">Brevet des Collèges, Section Général, Mention Assez-Bien</p>
                     </div>
                     <ul>
-                        <li data-lang-fr="LV1 : Anglais" data-lang-en="LV1: English">LV1 : Anglais</li>
-                        <li data-lang-fr="LV2 : Espagnol" data-lang-en="LV2: Spanish">LV2 : Espagnol</li>
+                        <li data-i18n="education.college.li1">LV1 : Anglais</li>
+                        <li data-i18n="education.college.li2">LV2 : Espagnol</li>
                     </ul>
                 </div>
             </div>
@@ -131,7 +130,7 @@
         </div>
     </div>
     <div class="experiences section-base fade-in-section" id="experiences">
-    <h2 class="section-title" data-lang-fr="Expériences professionnelles" data-lang-en="Professional Experience">Expériences professionnelles</h2>
+    <h2 class="section-title" data-i18n="experiences.sectionTitle">Expériences professionnelles</h2>
     
     <div class="carousel-container">
         <!-- Bouton Précédent -->
@@ -143,14 +142,14 @@
             <!-- EXPÉRIENCE 1 (Active par défaut ou gérée par ton JS) -->
             <div class="timeline-item active">
                 <div class="timeline-content">
-                    <h3 data-lang-fr="Auto Ecole Rout'Art" data-lang-en="Auto Ecole Rout'Art">Auto Ecole Rout'Art</h3>
-                    <div class="timeline-period" data-lang-fr="16/03/2026 - Aujourd'hui" data-lang-en="03/16/2026 - Today">16/03/2026 - Aujourd'hui</div>
-                    <div class="experience-company" data-lang-fr="Lunéville, Secrétaire" data-lang-en="Lunéville, Secretary">Lunéville, Secrétaire</div>
-                    <p data-lang-fr="Gestion quotidienne du secrétariat, de la relation clientèle et du suivi administratif, tout en assurant la maintenance technique des outils numériques de l'entreprise." data-lang-en="Daily management of administrative tasks, customer relations, and billing, while ensuring the technical maintenance of the company's digital tools.">Gestion quotidienne du secrétariat, de la relation clientèle et du suivi administratif, tout en assurant la maintenance technique des outils numériques de l'entreprise.</p>
+                    <h3 data-i18n="exp1.title">Auto Ecole Rout'Art</h3>
+                    <div class="timeline-period" data-i18n="exp1.period">16/03/2026 - Aujourd'hui</div>
+                    <div class="experience-company" data-i18n="exp1.company">Lunéville, Secrétaire</div>
+                    <p data-i18n="exp1.text">Gestion quotidienne du secrétariat, de la relation clientèle et du suivi administratif, tout en assurant la maintenance technique des outils numériques de l'entreprise.</p>
                     <ul>
-                        <li data-lang-fr="Traitement des dossiers, suivi des factures et relances (Via l’appli Rapido)" data-lang-en="Processing of files, invoices tracking and follow-ups (Via the Rapido app)">Traitement des dossiers, suivi des factures et relances (Via l’appli Rapido)</li>
-                        <li data-lang-fr="Prise en charge des demandes, renseigment et orientation de la clientèle" data-lang-en="Handling inquiries, providing information and greeting customers at the reception">Prise en charge des demandes, renseigment et orientation de la clientèle</li>
-                        <li data-lang-fr="Mise a jour régulière et maintenance du site internet de l’entreprise (Actualisation des tarifs, etc...)" data-lang-en="Regular updates and maintenance of the company website (Price and content update)">Mise a jour régulière et maintenance du site internet de l’entreprise (Actualisation des tarifs, etc...)</li>
+                        <li data-i18n="exp1.li1">Traitement des dossiers, suivi des factures et relances (Via l’appli Rapido)</li>
+                        <li data-i18n="exp1.li2">Prise en charge des demandes, renseigment et orientation de la clientèle</li>
+                        <li data-i18n="exp1.li3">Mise a jour régulière et maintenance du site internet de l’entreprise (Actualisation des tarifs, etc...)</li>
                     </ul>
                 </div>
             </div>
@@ -158,14 +157,14 @@
             <!-- EXPÉRIENCE 2 -->
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3 data-lang-fr="Auto Ecole Rout'Art" data-lang-en="Auto Ecole Rout'Art">Auto Ecole Rout'Art</h3>
-                    <div class="timeline-period" data-lang-fr="29/09/2025 - 29/11/2025, Stage de deuxième année à Epitech" data-lang-en="09/29/2025 - 11/29/2025, Second-Year Internship at Epitech">29/09/2025 - 29/11/2025, Stage de deuxième année à Epitech</div>
-                    <div class="experience-company" data-lang-fr="Lunéville, Développeur Full Stack" data-lang-en="Lunéville, Full Stack Developer">Lunéville, Développeur Full Stack</div>
-                    <p data-lang-fr="Refonte du site web de l'Auto-École avec intégration des technologies modernes." data-lang-en="Redesign of the driving school's website with integration of modern technologies.">Refonte du site web de l'Auto-École avec intégration des technologies modernes.</p>
+                    <h3 data-i18n="exp2.title">Auto Ecole Rout'Art</h3>
+                    <div class="timeline-period" data-i18n="exp2.period">29/09/2025 - 29/11/2025, Stage de deuxième année à Epitech</div>
+                    <div class="experience-company" data-i18n="exp2.company">Lunéville, Développeur Full Stack</div>
+                    <p data-i18n="exp2.text">Refonte du site web de l'Auto-École avec intégration des technologies modernes.</p>
                     <ul>
-                        <li data-lang-fr="Refonte du site de l'Auto-Ecole" data-lang-en="Redesign of the driving school's website">Refonte du site de l'Auto-Ecole</li>
-                        <li data-lang-fr="Utilisation des technologies HTML, CSS, JavaScript dans le monde professionnel" data-lang-en="Use of HTML, CSS, JavaScript technologies in a professional environment">Utilisation des technologies HTML, CSS, JavaScript dans le monde professionnel</li>
-                        <li data-lang-fr="Découverte des éléments obligatoires pour une auto-école labélisée" data-lang-en="Discovery of mandatory elements for a certified driving school">Découverte des éléments obligatoires pour une auto-école labélisée</li>
+                        <li data-i18n="exp2.li1">Refonte du site de l'Auto-Ecole</li>
+                        <li data-i18n="exp2.li2">Utilisation des technologies HTML, CSS, JavaScript dans le monde professionnel</li>
+                        <li data-i18n="exp2.li3">Découverte des éléments obligatoires pour une auto-école labélisée</li>
                     </ul>
                 </div>
             </div>
@@ -173,15 +172,15 @@
             <!-- EXPÉRIENCE 3 -->
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3 data-lang-fr="Pharmacie Laurain" data-lang-en="Pharmacie Laurain">Pharmacie Laurain</h3>
-                    <div class="timeline-period" data-lang-fr="Stage de 3ème année" data-lang-en="Year 10/9th Year Internship">Stage de 3ème (Collège)</div>
-                    <div class="experience-company" data-lang-fr="Lunéville" data-lang-en="Lunéville">Lunéville</div>
-                    <p data-lang-fr="Stage dans une pharmacie couvrant les aspects administratifs, de gestion et opérationnels de l'activité." data-lang-en="Internship at a pharmacy covering administrative, management and operational aspects of the business.">Stage dans une pharmacie couvrant les aspects administratifs, de gestion et opérationnels de l'activité.</p>
+                    <h3 data-i18n="exp3.title">Pharmacie Laurain</h3>
+                    <div class="timeline-period" data-i18n="exp3.period">Stage de 3ème (Collège)</div>
+                    <div class="experience-company" data-i18n="exp3.company">Lunéville</div>
+                    <p data-i18n="exp3.text">Stage dans une pharmacie couvrant les aspects administratifs, de gestion et opérationnels de l'activité.</p>
                     <ul>
-                        <li data-lang-fr="Gestion des stocks" data-lang-en="Inventory management">Gestion des stocks</li>
-                        <li data-lang-fr="Facturation de la clientèle" data-lang-en="Customer billing">Facturation de la clientèle</li>
-                        <li data-lang-fr="Découverte des actes de posologie" data-lang-en="Discovery of dosage procedures">Découverte des actes de posologie</li>
-                        <li data-lang-fr="Préparation de commandes pour les livraisons" data-lang-en="Preparation of orders for delivery">Préparation de commandes pour les livraisons</li>
+                        <li data-i18n="exp3.li1">Gestion des stocks</li>
+                        <li data-i18n="exp3.li2">Facturation de la clientèle</li>
+                        <li data-i18n="exp3.li3">Découverte des actes de posologie</li>
+                        <li data-i18n="exp3.li4">Préparation de commandes pour les livraisons</li>
                     </ul>
                 </div>
             </div>
@@ -201,11 +200,11 @@
     </div>
 
     <div class="contributions section-base">
-        <h2 class="section-title" data-lang-fr="Mes contributions GitHub" data-lang-en="My GitHub Contributions">Mes contributions GitHub</h2>
+        <h2 class="section-title" data-i18n="contributions.sectionTitle">Mes contributions GitHub</h2>
         <iframe src="https://pages.codeadam.ca/github-contributions/gossotjeanbaptiste" width="800" height="190" frameborder="0" allowtransparency id="iframe" style="max-width: 100%;"></iframe>
     </div>
     <div class="projects section-base fade-in-section">
-        <h2 class="section-title" data-lang-fr="Projets" data-lang-en="Projects">Projets</h2>
+        <h2 class="section-title" data-i18n="projects.sectionTitle">Projets</h2>
         <div class="project-tabs">
             <button class="tab-button active" data-project="Organized">Organized</button>
             <button class="tab-button" data-project="Wolf3D">Wolf3D</button>
@@ -219,17 +218,17 @@
                 <div class="project-info">
                     <div class="project-text">
                         <div class="project-header">
-                            <h3 data-lang-fr="Organized" data-lang-en="Organized">Organized</h3>
+                            <h3 data-i18n="project.organized.title">Organized</h3>
                             <a href="https://github.com/gossotjeanbaptiste/Organized" target="_blank" class="github-link">
                                 <img src="images/github_ico.svg" alt="GitHub Repository" class="github-icon" onerror="this.src='images/errorpng.png'">
                             </a>
                         </div>
-                        <p data-lang-fr="Ce projet est une reproduction d'une ligne de production d'une usine. Il utilise le concept de « liste chaînée » pour simuler le fonctionnement d'une chaîne de montage avec différentes étapes de production." data-lang-en="This project reproduces a factory production line. It uses the concept of « linked lists » to simulate the operation of an assembly line with different production stages.">Ce projet est une reproduction d'une ligne de production d'une usine. Il utilise le concept de "liste chaînée" pour simuler le fonctionnement d'une chaîne de montage avec différentes étapes de production.</p>
+                        <p data-i18n="project.organized.text">Ce projet est une reproduction d'une ligne de production d'une usine. Il utilise le concept de "liste chaînée" pour simuler le fonctionnement d'une chaîne de montage avec différentes étapes de production.</p>
                         <ul>
-                            <li data-lang-fr="Structures de données (listes chaînées)" data-lang-en="Data structures (linked lists)">Structures de données (listes chaînées)</li>
-                            <li data-lang-fr="Simulation de processus industriels" data-lang-en="Industrial process simulation">Simulation de processus industriels</li>
-                            <li data-lang-fr="Gestion de la mémoire en C" data-lang-en="Memory management in C">Gestion de la mémoire en C</li>
-                            <li data-lang-fr="Optimisation des performances" data-lang-en="Performance optimization">Optimisation des performances</li>
+                            <li data-i18n="project.organized.li1">Structures de données (listes chaînées)</li>
+                            <li data-i18n="project.organized.li2">Simulation de processus industriels</li>
+                            <li data-i18n="project.organized.li3">Gestion de la mémoire en C</li>
+                            <li data-i18n="project.organized.li4">Optimisation des performances</li>
                         </ul>
                     </div>
                     <div class="project-visual">
@@ -248,17 +247,17 @@
                 <div class="project-info">
                     <div class="project-text">
                         <div class="project-header">
-                            <h3 data-lang-fr="Wolf3D" data-lang-en="Wolf3D">Wolf3D</h3>
+                            <h3 data-i18n="project.wolf3d.title">Wolf3D</h3>
                             <a href="https://github.com/gossotjeanbaptiste/Wolf3D" target="_blank" class="github-link">
                                 <img src="images/github_ico.svg" alt="GitHub Repository" class="github-icon" onerror="this.src='images/errorpng.png'">
                             </a>
                         </div>
-                        <p data-lang-fr="Ce projet est un clone du célèbre jeu Wolfenstein 3D. Il a été développé en C et utilise la bibliothèque CSFML pour les interactions graphiques. Le rendu 3D a été réalisé grâce à un moteur de rendu recréé par nous utilisant la technologie du Raycasting." data-lang-en="This project is a clone of the famous Wolfenstein 3D game. It was developed in C and uses the CSFML library for graphics interactions. The 3D rendering was achieved through a rendering engine we recreated using the technology of the Raycasting.">Ce projet est un clone du célèbre jeu Wolfenstein 3D. Il a été développé en C et utilise la bibliothèque CSFML pour les interactions graphiques. Le rendu 3D a été réalisé grâce à un moteur de rendu recréé par nous utilisant la technologie du Raycasting.</p>
+                        <p data-i18n="project.wolf3d.text">Ce projet est un clone du célèbre jeu Wolfenstein 3D. Il a été développé en C et utilise la bibliothèque CSFML pour les interactions graphiques. Le rendu 3D a été réalisé grâce à un moteur de rendu recréé par nous utilisant la technologie du Raycasting.</p>
                         <ul>
-                            <li data-lang-fr="Algorithme de Raycasting" data-lang-en="Raycasting algorithm">Algorithme de Raycasting</li>
-                            <li data-lang-fr="Rendu 3D en temps réel" data-lang-en="Real-time 3D rendering">Rendu 3D en temps réel</li>
-                            <li data-lang-fr="Gestion des textures et sprites" data-lang-en="Texture and sprite management">Gestion des textures et sprites</li>
-                            <li data-lang-fr="Optimisation graphique" data-lang-en="Graphics optimization">Optimisation graphique</li>
+                            <li data-i18n="project.wolf3d.li1">Algorithme de Raycasting</li>
+                            <li data-i18n="project.wolf3d.li2">Rendu 3D en temps réel</li>
+                            <li data-i18n="project.wolf3d.li3">Gestion des textures et sprites</li>
+                            <li data-i18n="project.wolf3d.li4">Optimisation graphique</li>
                         </ul>
                     </div>
                     <div class="project-visual">
@@ -278,17 +277,17 @@
                 <div class="project-info">
                     <div class="project-text">
                         <div class="project-header">
-                            <h3 data-lang-fr="Arcade" data-lang-en="Arcade">Arcade</h3>
+                            <h3 data-i18n="project.arcade.title">Arcade</h3>
                             <a href="https://github.com/gossotjeanbaptiste/Arcade" target="_blank" class="github-link">
                                 <img src="images/github_ico.svg" alt="GitHub Repository" class="github-icon" onerror="this.src='images/errorpng.png'">
                             </a>
                         </div>
-                        <p data-lang-fr="Ce projet est un moteur de jeu d'arcade modulaire en C++ permettant de jouer à plusieurs jeux avec différentes bibliothèques graphiques (ncurses, SDL2, raylib), avec la possibilité de changer de bibliothèque graphique en cours de partie sans interrompre le jeu." data-lang-en="This project is a modular C++ arcade game engine that lets you play several games with different graphics libraries (ncurses, SDL2, raylib), switching between them mid-game without interrupting gameplay.">Ce projet est un moteur de jeu d'arcade modulaire en C++ permettant de jouer à plusieurs jeux avec différentes bibliothèques graphiques (ncurses, SDL2, raylib), avec la possibilité de changer de bibliothèque graphique en cours de partie sans interrompre le jeu.</p>
+                        <p data-i18n="project.arcade.text">Ce projet est un moteur de jeu d'arcade modulaire en C++ permettant de jouer à plusieurs jeux avec différentes bibliothèques graphiques (ncurses, SDL2, raylib), avec la possibilité de changer de bibliothèque graphique en cours de partie sans interrompre le jeu.</p>
                         <ul>
-                            <li data-lang-fr="Architecture à plugins (chargement dynamique)" data-lang-en="Plugin-based architecture (dynamic loading)">Architecture à plugins (chargement dynamique)</li>
-                            <li data-lang-fr="Jeux Snake et Démineur jouables" data-lang-en="Playable Snake and Minesweeper games">Jeux Snake et Démineur jouables</li>
-                            <li data-lang-fr="Changement de bibliothèque graphique à chaud" data-lang-en="Hot-swapping graphics libraries">Changement de bibliothèque graphique à chaud</li>
-                            <li data-lang-fr="Sauvegarde des meilleurs scores" data-lang-en="High score tracking">Sauvegarde des meilleurs scores</li>
+                            <li data-i18n="project.arcade.li1">Architecture à plugins (chargement dynamique)</li>
+                            <li data-i18n="project.arcade.li2">Jeux Snake et Démineur jouables</li>
+                            <li data-i18n="project.arcade.li3">Changement de bibliothèque graphique à chaud</li>
+                            <li data-i18n="project.arcade.li4">Sauvegarde des meilleurs scores</li>
                         </ul>
                     </div>
                     <div class="project-visual">
@@ -308,17 +307,17 @@
                 <div class="project-info">
                     <div class="project-text">
                         <div class="project-header">
-                            <h3 data-lang-fr="Raytracer" data-lang-en="Raytracer">Raytracer</h3>
+                            <h3 data-i18n="project.raytracer.title">Raytracer</h3>
                             <a href="https://github.com/gossotjeanbaptiste/Raytracer" target="_blank" class="github-link">
                                 <img src="images/github_ico.svg" alt="GitHub Repository" class="github-icon" onerror="this.src='images/errorpng.png'">
                             </a>
                         </div>
-                        <p data-lang-fr="Ce projet est un moteur de ray tracing fonctionnant sur CPU qui génère des images photoréalistes à partir de scènes 3D définies en texte. Il simule la propagation de la lumière en lançant un rayon par pixel et en calculant les intersections avec les objets de la scène." data-lang-en="This project is a CPU-based ray tracing engine that generates photorealistic images from text-defined 3D scenes. It simulates light propagation by casting a ray per pixel and computing intersections with scene objects.">Ce projet est un moteur de ray tracing fonctionnant sur CPU qui génère des images photoréalistes à partir de scènes 3D définies en texte. Il simule la propagation de la lumière en lançant un rayon par pixel et en calculant les intersections avec les objets de la scène.</p>
+                        <p data-i18n="project.raytracer.text">Ce projet est un moteur de ray tracing fonctionnant sur CPU qui génère des images photoréalistes à partir de scènes 3D définies en texte. Il simule la propagation de la lumière en lançant un rayon par pixel et en calculant les intersections avec les objets de la scène.</p>
                         <ul>
-                            <li data-lang-fr="Primitives géométriques variées (sphères, plans, cônes...)" data-lang-en="Various geometric primitives (spheres, planes, cones...)">Primitives géométriques variées (sphères, plans, cônes...)</li>
-                            <li data-lang-fr="Éclairage ambiant, directionnel et occlusion ambiante" data-lang-en="Ambient, directional lighting and ambient occlusion">Éclairage ambiant, directionnel et occlusion ambiante</li>
-                            <li data-lang-fr="Rendu multithreadé avec équilibrage de charge" data-lang-en="Multithreaded rendering with load balancing">Rendu multithreadé avec équilibrage de charge</li>
-                            <li data-lang-fr="Scènes éditables via fichiers de configuration texte" data-lang-en="Scenes editable through text configuration files">Scènes éditables via fichiers de configuration texte</li>
+                            <li data-i18n="project.raytracer.li1">Primitives géométriques variées (sphères, plans, cônes...)</li>
+                            <li data-i18n="project.raytracer.li2">Éclairage ambiant, directionnel et occlusion ambiante</li>
+                            <li data-i18n="project.raytracer.li3">Rendu multithreadé avec équilibrage de charge</li>
+                            <li data-i18n="project.raytracer.li4">Scènes éditables via fichiers de configuration texte</li>
                         </ul>
                     </div>
                     <div class="project-visual">
@@ -337,17 +336,17 @@
                 <div class="project-info">
                     <div class="project-text">
                         <div class="project-header">
-                            <h3 data-lang-fr="Zappy" data-lang-en="Zappy">Zappy</h3>
+                            <h3 data-i18n="project.zappy.title">Zappy</h3>
                             <a href="https://github.com/gossotjeanbaptiste/Zappy" target="_blank" class="github-link">
                                 <img src="images/github_ico.svg" alt="GitHub Repository" class="github-icon" onerror="this.src='images/errorpng.png'">
                             </a>
                         </div>
-                        <p data-lang-fr="Zappy est un jeu multijoueur en temps réel où plusieurs équipes s'affrontent sur une carte torique à la recherche de ressources rares, dans le but de faire évoluer au moins 6 joueurs jusqu'au niveau maximum." data-lang-en="Zappy is a real-time multiplayer game where several teams compete on a toroidal map searching for rare resources, aiming to bring at least 6 players to the maximum level.">Zappy est un jeu multijoueur en temps réel où plusieurs équipes s'affrontent sur une carte torique à la recherche de ressources rares, dans le but de faire évoluer au moins 6 joueurs jusqu'au niveau maximum.</p>
+                        <p data-i18n="project.zappy.text">Zappy est un jeu multijoueur en temps réel où plusieurs équipes s'affrontent sur une carte torique à la recherche de ressources rares, dans le but de faire évoluer au moins 6 joueurs jusqu'au niveau maximum.</p>
                         <ul>
-                            <li data-lang-fr="Serveur en C avec I/O non-bloquantes (poll)" data-lang-en="C server with non-blocking I/O (poll)">Serveur en C avec I/O non-bloquantes (poll)</li>
-                            <li data-lang-fr="Client graphique 3D en temps réel (C++)" data-lang-en="Real-time 3D graphical client (C++)">Client graphique 3D en temps réel (C++)</li>
-                            <li data-lang-fr="Intelligence artificielle autonome en Python" data-lang-en="Autonomous AI in Python">Intelligence artificielle autonome en Python</li>
-                            <li data-lang-fr="Protocole réseau TCP ouvert" data-lang-en="Open TCP network protocol">Protocole réseau TCP ouvert</li>
+                            <li data-i18n="project.zappy.li1">Serveur en C avec I/O non-bloquantes (poll)</li>
+                            <li data-i18n="project.zappy.li2">Client graphique 3D en temps réel (C++)</li>
+                            <li data-i18n="project.zappy.li3">Intelligence artificielle autonome en Python</li>
+                            <li data-i18n="project.zappy.li4">Protocole réseau TCP ouvert</li>
                         </ul>
                     </div>
                     <div class="project-visual">
@@ -367,17 +366,17 @@
                 <div class="project-info">
                     <div class="project-text">
                         <div class="project-header">
-                            <h3 data-lang-fr="Echoing Void" data-lang-en="Echoing Void">Echoing Void</h3>
+                            <h3 data-i18n="project.echoingvoid.title">Echoing Void</h3>
                             <a href="https://github.com/gossotjeanbaptiste/Echoing_Void" target="_blank" class="github-link">
                                 <img src="images/github_ico.svg" alt="GitHub Repository" class="github-icon" onerror="this.src='images/errorpng.png'">
                             </a>
                         </div>
-                        <p data-lang-fr="Ce projet est un mod Minecraft Java (Fabric) porté depuis le DLC « Echoing Void » de Minecraft Dungeons. Il enrichit la dimension de l'End avec un nouveau biome, des créatures, une progression de fin de partie et des objets légendaires, sans altérer le gameplay de base." data-lang-en="This project is a Minecraft Java mod (Fabric) porting content from the Minecraft Dungeons « Echoing Void » DLC. It expands the End dimension with a new biome, custom mobs, an endgame progression system, and legendary items, without altering base gameplay.">Ce projet est un mod Minecraft Java (Fabric) porté depuis le DLC « Echoing Void » de Minecraft Dungeons. Il enrichit la dimension de l'End avec un nouveau biome, des créatures, une progression de fin de partie et des objets légendaires, sans altérer le gameplay de base.</p>
+                        <p data-i18n="project.echoingvoid.text">Ce projet est un mod Minecraft Java (Fabric) porté depuis le DLC « Echoing Void » de Minecraft Dungeons. Il enrichit la dimension de l'End avec un nouveau biome, des créatures, une progression de fin de partie et des objets légendaires, sans altérer le gameplay de base.</p>
                         <ul>
-                            <li data-lang-fr="Nouveau biome « Void Islands » avec défis de parkour" data-lang-en="New « Void Islands » biome with parkour challenges">Nouveau biome « Void Islands » avec défis de parkour</li>
-                            <li data-lang-fr="Créatures hostiles inédites (Watchling, Blastling)" data-lang-en="New hostile mobs (Watchling, Blastling)">Créatures hostiles inédites (Watchling, Blastling)</li>
-                            <li data-lang-fr="Progression Enderite au-delà du Netherite" data-lang-en="Enderite progression tier beyond Netherite">Progression Enderite au-delà du Netherite</li>
-                            <li data-lang-fr="Armes légendaires et enchantement exclusif" data-lang-en="Legendary weapons and exclusive enchantment">Armes légendaires et enchantement exclusif</li>
+                            <li data-i18n="project.echoingvoid.li1">Nouveau biome « Void Islands » avec défis de parkour</li>
+                            <li data-i18n="project.echoingvoid.li2">Créatures hostiles inédites (Watchling, Blastling)</li>
+                            <li data-i18n="project.echoingvoid.li3">Progression Enderite au-delà du Netherite</li>
+                            <li data-i18n="project.echoingvoid.li4">Armes légendaires et enchantement exclusif</li>
                         </ul>
                     </div>
                     <div class="project-visual">
@@ -396,33 +395,33 @@
         </div>
     </div>
     <div class="languages section-base">
-        <h2 class="section-title" data-lang-fr="Langues" data-lang-en="Languages">Langues</h2>
+        <h2 class="section-title" data-i18n="languages.sectionTitle">Langues</h2>
         <div class="languages-content">
             <div class="languages-info">
                 <div class="language-item">
                     <div class="language-icon">
-                        <img src="images/FR.svg" alt="Français" data-lang-fr="Français" data-lang-en="French" onerror="this.src='images/errorpng.png'">
+                        <img src="images/FR.svg" alt="Français" data-i18n="languages.fr.iconAlt" onerror="this.src='images/errorpng.png'">
                     </div>
                     <div class="language-details">
-                        <h3 data-lang-fr="Français" data-lang-en="French">Français</h3>
-                        <p data-lang-fr="Langue maternelle" data-lang-en="Native language">Langue maternelle</p>
+                        <h3 data-i18n="languages.fr.title">Français</h3>
+                        <p data-i18n="languages.fr.level">Langue maternelle</p>
                     </div>
                 </div>
                 <div class="language-item">
                     <div class="language-icon">
-                        <img src="images/USUK.svg" alt="Anglais" data-lang-fr="Anglais" data-lang-en="English" onerror="this.src='images/errorpng.png'">
+                        <img src="images/USUK.svg" alt="Anglais" data-i18n="languages.en.iconAlt" onerror="this.src='images/errorpng.png'">
                     </div>
                     <div class="language-details">
-                        <h3 data-lang-fr="Anglais" data-lang-en="English">Anglais</h3>
-                        <p data-lang-fr="Baccalauréat Niveau (B2)" data-lang-en="French Baccalauréat B2">Baccalauréat Niveau (B2)</p>
-                        <p data-lang-fr="TEPITECH (Equivalent TOEIC) : 825/990" data-lang-en="TEPITECH (TOEIC Equivalent): 825/990">TEPITECH (Equivalent TOEIC) : 825/990</p>
+                        <h3 data-i18n="languages.en.title">Anglais</h3>
+                        <p data-i18n="languages.en.level1">Baccalauréat Niveau (B2)</p>
+                        <p data-i18n="languages.en.level2">TEPITECH (Equivalent TOEIC) : 825/990</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="contact section-base">
-        <h2 class="section-title" data-lang-fr="Me contacter" data-lang-en="Contact Me">Me contacter</h2>
+        <h2 class="section-title" data-i18n="contact.sectionTitle">Me contacter</h2>
         <div class="contact-content">
             <div class="contact-info">
                 <div class="contact-item">
@@ -452,7 +451,7 @@
                     </div>
                     <div class="contact-details">
                         <h3>Email</h3>
-                        <p><a href="mailto:jean-baptiste.gossot@epitech.eu">jean-baptiste.gossot@epitech.eu</a></p>
+                        <p><a href="mailto:gossotjeanbaptiste@gmail.com">gossotjeanbaptiste@gmail.com</a></p>
                     </div>
                 </div>
                 <div class="contact-item">
@@ -462,17 +461,17 @@
                         </svg>
                     </div>
                     <div class="contact-details">
-                        <h3 data-lang-fr="Téléphone" data-lang-en="Phone">Téléphone</h3>
+                        <h3 data-i18n="contact.phoneLabel">Téléphone</h3>
                         <p><a href="tel:+33638404406">+33 6 38 40 44 06</a></p>
                     </div>
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon">
-                        <img src="images/drive_ico.png" alt="CV" data-lang-fr="CV" data-lang-en="Resume" onerror="this.src='images/errorpng.png'">
+                        <img src="images/drive_ico.png" alt="CV" data-i18n="contact.cvIconAlt" onerror="this.src='images/errorpng.png'">
                     </div>
                     <div class="contact-details">
-                        <h3 data-lang-fr="CV" data-lang-en="Resume">CV</h3>
-                        <p><a href="https://drive.google.com/file/d/1H5htxjXJdvQahL4jzqzQ7ikkn2V5BqhZ/view?usp=sharing" target="_blank" id="cv-link-contact" data-lang-fr="Voir mon CV" data-lang-en="View my Resume">Voir mon CV</a></p>
+                        <h3 data-i18n="contact.cvLabel">CV</h3>
+                        <p><a href="https://drive.google.com/file/d/1H5htxjXJdvQahL4jzqzQ7ikkn2V5BqhZ/view?usp=sharing" target="_blank" id="cv-link-contact" data-i18n="contact.cvLinkText">Voir mon CV</a></p>
                     </div>
                 </div>
                 <div class="contact-item">
@@ -483,8 +482,8 @@
                         </svg>
                     </div>
                     <div class="contact-details">
-                        <h3 data-lang-fr="Adresse" data-lang-en="Address">Adresse</h3>
-                        <p data-lang-fr="23Bis Rue du Général Leclerc<br>54300, Lunéville, France" data-lang-en="23Bis Rue du Général Leclerc<br>54300, Lunéville, France">23Bis Rue du Général Leclerc<br>54300, Lunéville, France</p>
+                        <h3 data-i18n="contact.addressLabel">Adresse</h3>
+                        <p data-i18n="contact.addressText">23Bis Rue du Général Leclerc<br>54300, Lunéville, France</p>
                     </div>
                 </div>
             </div>
@@ -493,7 +492,7 @@
     
     <footer class="footer">
         <div class="footer-content">
-            <p class="footer-line-1" data-lang-fr="Créer par Jean-Baptiste (POGGIO) GOSSOT ©JustWirelessInc. 2021-2029 (Not an actual Incorporation)" data-lang-en="Created by Jean-Baptiste (POGGIO) GOSSOT ©JustWirelessInc. 2021-2029 (Not an actual Incorporation)">Créer par Jean-Baptiste (POGGIO) GOSSOT ©JustWirelessInc. 2021-2029 (Not an actual Incorporation)</p>
+            <p class="footer-line-1" data-i18n="footer.line1">Créer par Jean-Baptiste (POGGIO) GOSSOT ©JustWirelessInc. 2021-2029 (Not an actual Incorporation)</p>
             <p class="footer-line-2">An <a href="https://www.epitech.eu/" target="_blank" class="epitech-link"><img src="images/EPI-LOGO-2023-BLANC.png" alt="Epitech" class="epitech-logo" onerror="this.src='images/errorpng.png'"></a> side project</p>
         </div>
     </footer>
