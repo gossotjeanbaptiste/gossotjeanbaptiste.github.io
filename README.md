@@ -250,7 +250,7 @@ Ce portfolio a été conçu pour :
 
 ### 💼 Liens professionnels
 
-- **💼 LinkedIn** : [Jean-Baptiste (POGGIO) GOSSOT](https://www.linkedin.com/in/jean-baptiste-gossot-137589247/)
+- **💼 LinkedIn** : [Jean-Baptiste (POGGIO) GOSSOT](https://www.linkedin.com/in/jbgossot/)
 - **🐙 GitHub** : [gossotjeanbaptiste](https://github.com/gossotjeanbaptiste)
 - **📄 CV** : [Voir mon CV](https://drive.google.com/file/d/1H5htxjXJdvQahL4jzqzQ7ikkn2V5BqhZ/view?usp=sharing)
 
@@ -521,7 +521,7 @@ This portfolio was designed to:
 
 ### 💼 Professional Links
 
-- **💼 LinkedIn**: [Jean-Baptiste (POGGIO) GOSSOT](https://www.linkedin.com/in/jean-baptiste-gossot-137589247/)
+- **💼 LinkedIn**: [Jean-Baptiste (POGGIO) GOSSOT](https://www.linkedin.com/in/jbgossot/)
 - **🐙 GitHub**: [gossotjeanbaptiste](https://github.com/gossotjeanbaptiste)
 - **📄 Resume**: [View my CV](https://drive.google.com/file/d/1H5htxjXJdvQahL4jzqzQ7ikkn2V5BqhZ/view?usp=sharing)
 
