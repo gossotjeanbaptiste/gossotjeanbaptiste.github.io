@@ -103,21 +103,24 @@
 .project-content {
     width: 100%;
     max-width: 1000px;
+    display: grid;
 }
 
+/* Tous les panneaux occupent la même cellule : la hauteur = celle du plus grand */
 .project-panel {
+    grid-area: 1 / 1;
+    display: flex;
+    flex-direction: column;
     opacity: 0;
-    transition: opacity 0.15s ease;
+    visibility: hidden;
+    transition: opacity 0.15s ease, visibility 0.15s;
     pointer-events: none;
-    max-height: 0;
-    overflow: hidden;
 }
 
 .project-panel.active {
     opacity: 1;
+    visibility: visible;
     pointer-events: auto;
-    max-height: none;
-    overflow: visible;
 }
 
 .project-info {
@@ -130,6 +133,7 @@
     backface-visibility: hidden;
     transform: translateZ(0);
     display: flex;
+    flex: 1;
     gap: 30px;
     align-items: flex-start;
     padding: 30px;

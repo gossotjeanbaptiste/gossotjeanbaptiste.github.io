@@ -52,6 +52,7 @@
     position: relative;
     flex: 1;
     overflow: visible;
+    display: grid;
     min-height: 280px;
 }
 
@@ -59,21 +60,22 @@
     content: none;
 }
 
+/* Tous les items occupent la même cellule : la hauteur = celle du plus grand */
 .timeline-item {
-    position: relative;
+    grid-area: 1 / 1;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 0;
     padding-left: 0;
     opacity: 0;
-    position: absolute;
-    left: 0;
-    right: 0;
-    transition: opacity 0.5s ease-in-out;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s;
     pointer-events: none;
 }
 
 .timeline-item.active {
     opacity: 1;
-    position: relative;
+    visibility: visible;
     pointer-events: auto;
 }
 
@@ -82,6 +84,7 @@
 }
 
 .timeline-content {
+    flex: 1;
     background: var(--white-1);
     border-radius: var(--border-radius);
     backdrop-filter: blur(10px);
