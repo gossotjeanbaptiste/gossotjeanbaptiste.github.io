@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Latin.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --color-ink: #070b10;
+  --color-ink-2: #0d141c;
+  --color-brand: #2f718a;
+  --color-brand-light: #4fb3d9;
+  --color-brand-dark: #2e5766;
+  --animate-blob: blob 18s ease-in-out infinite;
+  --animate-spin-slow: spin 6s linear infinite;
+  --animate-marquee: marquee 30s linear infinite;
+
+  @keyframes blob {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(8vw, -6vh) scale(1.15); }
+    66% { transform: translate(-6vw, 5vh) scale(0.9); }
+  }
+}
+
+@layer base {
+  html { background: var(--color-ink); color-scheme: dark; }
+  body { @apply bg-ink text-slate-200 font-sans antialiased overflow-x-hidden; }
+  p, li { text-wrap: pretty; }
+  ::selection { background: var(--color-brand); color: white; }
+}
+
+/* Lenis (smooth scroll) */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+/* Évite le flash du contenu avant que GSAP prenne la main */
+html.js .reveal-init { visibility: hidden; }
+
+/* Texte dégradé arc-en-ciel animé (clin d'œil à l'ancienne version) */
+.text-rainbow {
+  background: linear-gradient(90deg, #ff5f6d, #ffc371, #7cf29c, #4fb3d9, #8a6dff, #ff5f6d);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow 8s linear infinite;
+}
+@keyframes rainbow { to { background-position: 300% 0; } }
+
+/* Grille de fond révélée par un "spotlight" qui suit la souris */
+.grid-bg {
+  background-image:
+    linear-gradient(to right, rgb(255 255 255 / 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.06) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(420px circle at var(--mx, 50%) var(--my, 40%), black, transparent 70%);
+}
+
+/* Anneau conique tournant autour de l'avatar */
+.avatar-ring {
+  background: conic-gradient(from 0deg, #4fb3d9, #8a6dff, #ff5f6d, #ffc371, #4fb3d9);
+}
+
+/* Carte avec bordure lumineuse qui suit la souris */
+.spotlight-card { position: relative; isolation: isolate; }
+.spotlight-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: radial-gradient(300px circle at var(--x, 50%) var(--y, 50%), rgb(79 179 217 / 0.8), transparent 60%);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: -1;
+}
+.spotlight-card:hover::before { opacity: 1; }
+
+/* Reflet sur les cartes projets en tilt 3D */
+.tilt-glare {
+  background: radial-gradient(circle at var(--gx, 50%) var(--gy, 50%), rgb(255 255 255 / 0.18), transparent 50%);
+}
+
+/* Curseur custom (desktop uniquement) */
+@media (pointer: fine) {
+  html.has-cursor, html.has-cursor a, html.has-cursor button { cursor: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+}
+
+/* Points de la timeline du parcours : atténués, puis allumés quand la ligne les atteint */
+.edu-dot {
+  background: var(--color-ink-2);
+  box-shadow: inset 0 0 0 2px rgb(255 255 255 / 0.2);
+  scale: 0.75;
+  transition: background-color 0.4s, box-shadow 0.4s, scale 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.edu-dot.is-lit {
+  background: var(--color-brand-light);
+  box-shadow: 0 0 20px var(--color-brand-light);
+  scale: 1;
+}
