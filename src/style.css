@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Actif quand main.js a créé le scroll horizontal des expériences (classe .exp-pinned sur la section) */
+@custom-variant pinned (&:where(.exp-pinned, .exp-pinned *));
+
 @font-face {
   font-family: "Montserrat";
   src: url("/fonts/Montserrat-Latin.woff2") format("woff2");

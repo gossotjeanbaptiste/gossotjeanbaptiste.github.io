@@ -5,6 +5,7 @@ import { SplitText } from 'gsap/SplitText';
 import Lenis from 'lenis';
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
+window.__booted = true; // désactive le filet de sécurité du <head>
 
 const $ = (s, root = document) => root.querySelector(s);
 const $$ = (s, root = document) => [...root.querySelectorAll(s)];
@@ -210,6 +211,8 @@ function buildScrollAnimations() {
 
     // --- Expériences : scroll horizontal épinglé (desktop) ---
     if (desktop) {
+      // Passe la section en mise en page horizontale (classes pinned: du HTML) avant de mesurer la piste
+      $('#experiences').classList.add('exp-pinned');
       const track = $('#exp-track');
       const distance = () => track.scrollWidth - window.innerWidth;
       const horizontal = gsap.to(track, {
@@ -262,6 +265,9 @@ function buildScrollAnimations() {
         },
       });
     });
+
+    // Nettoyage (changement de langue, passage en mobile…) : retour à la grille par défaut
+    return () => $('#experiences').classList.remove('exp-pinned');
   });
 
   return mm;
