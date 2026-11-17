@@ -268,7 +268,8 @@
 
             <div id="project-grid" class="grid gap-6 md:grid-cols-2 [perspective:1200px]">
                 <!-- Les cartes sont générées par main.js à partir de la liste PROJECTS -->
-                <noscript class="md:col-span-2"><p class="text-slate-400">Les projets s'affichent avec JavaScript. En attendant, ils sont tous sur <a class="text-brand-light underline" href="https://github.com/gossotjeanbaptiste">mon GitHub</a>.</p></noscript>
+                <!-- Message de secours, visible si la page n'a pas la classe .js (JS désactivé, ou main.js qui ne s'est pas lancé) -->
+                <p class="hidden text-slate-400 md:col-span-2 [html:not(.js)_&]:block">Les projets s'affichent avec JavaScript. En attendant, ils sont tous sur <a class="text-brand-light underline" href="https://github.com/gossotjeanbaptiste">mon GitHub</a>.</p>
             </div>
         </section>
 
