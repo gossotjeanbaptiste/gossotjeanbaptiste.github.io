@@ -180,7 +180,7 @@ function buildScrollAnimations() {
     });
 
     // --- À propos : mots qui s'allument au fil du scroll ---
-    const about = SplitText.create('#about-text', { type: 'words', aria: 'none' }) // mots lus normalement, pas d'aria-label interdit sur <p>;
+    const about = SplitText.create('#about-text', { type: 'words', aria: 'none' }); // mots lus normalement, pas d'aria-label interdit sur <p>
     gsap.fromTo(about.words, { opacity: 0.12 }, {
       opacity: 1, stagger: 0.1, ease: 'none',
       scrollTrigger: { trigger: '#about-text', start: 'top 80%', end: 'bottom 45%', scrub: true },
@@ -445,8 +445,10 @@ let scrollAnims = null;
 function initLanguageToggle() {
   $('#language-toggle').addEventListener('click', () => {
     const targets = ['main', 'footer'];
+    // opacity seulement (pas autoAlpha) : un visibility:hidden sur <main> serait hérité par les cartes,
+    // et GSAP enregistrerait alors « invisible » comme état final des animations reconstruites.
     gsap.to(targets, {
-      autoAlpha: 0, duration: 0.25, ease: 'power2.in',
+      opacity: 0, duration: 0.25, ease: 'power2.in',
       onComplete: () => {
         i18n.lang = i18n.lang === 'fr' ? 'en' : 'fr';
         safeSet('lang', i18n.lang);
@@ -455,7 +457,7 @@ function initLanguageToggle() {
         applyTranslations();
         scrollAnims = buildScrollAnimations();
         ScrollTrigger.refresh();
-        gsap.to(targets, { autoAlpha: 1, duration: 0.4, ease: 'power2.out' });
+        gsap.to(targets, { opacity: 1, duration: 0.4, ease: 'power2.out' });
       },
     });
   });
