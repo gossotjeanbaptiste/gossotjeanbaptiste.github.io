@@ -187,14 +187,15 @@
         </section>
 
         <!-- EXPÉRIENCES : scroll horizontal "épinglé" sur desktop -->
-        <section id="experiences" class="relative overflow-hidden bg-ink-2 py-24 lg:flex lg:h-svh lg:items-center lg:py-0">
-            <div id="exp-track" class="flex flex-col gap-8 px-4 lg:flex-row lg:items-center lg:gap-10 lg:pr-[calc((100vw-min(32rem,40vw))/2)] lg:pl-[8vw]">
-                <div class="lg:w-[34vw] lg:shrink-0">
+        <!-- Sans animations (réglage « réduire les animations ») : pas de scroll horizontal, les cartes passent en grille -->
+        <section id="experiences" class="relative overflow-hidden bg-ink-2 py-24 lg:flex lg:h-svh lg:items-center lg:py-0 lg:motion-reduce:block lg:motion-reduce:h-auto lg:motion-reduce:py-24">
+            <div id="exp-track" class="flex flex-col gap-8 px-4 lg:flex-row lg:items-center lg:gap-10 lg:pr-[calc((100vw-min(32rem,40vw))/2)] lg:pl-[8vw] lg:motion-reduce:grid lg:motion-reduce:grid-cols-3 lg:motion-reduce:items-stretch lg:motion-reduce:px-[8vw]">
+                <div class="lg:w-[34vw] lg:shrink-0 lg:motion-reduce:col-span-3 lg:motion-reduce:w-auto">
                     <h2 class="section-title text-[clamp(2.2rem,6vw,4.5rem)] leading-none font-black tracking-tight text-white" data-i18n="experiences.sectionTitle">Sur le terrain</h2>
-                    <div class="mt-6 hidden items-center gap-3 text-sm text-slate-500 lg:flex"><span class="h-px w-12 bg-slate-600"></span>→</div>
+                    <div class="mt-6 hidden items-center gap-3 text-sm text-slate-500 lg:flex lg:motion-reduce:hidden"><span class="h-px w-12 bg-slate-600"></span>→</div>
                 </div>
 
-                <article class="exp-card spotlight-card flex flex-col rounded-3xl border border-white/10 bg-ink p-8 lg:min-h-[60vh] lg:w-[min(32rem,40vw)] lg:shrink-0">
+                <article class="exp-card spotlight-card flex flex-col rounded-3xl border border-white/10 bg-ink p-8 lg:min-h-[60vh] lg:w-[min(32rem,40vw)] lg:shrink-0 lg:motion-reduce:min-h-0 lg:motion-reduce:w-auto">
                     <div class="mb-6 flex items-start justify-between">
                         <div class="exp-logo flex h-20 items-center overflow-hidden rounded-2xl bg-white px-3 py-1.5 shadow-lg shadow-black/30" data-initials="RA">
                             <img src="/images/companies/routart-logo.webp" alt="Logo Auto-École Rout'Art" width="600" height="271" class="h-full w-auto object-contain">
@@ -212,7 +213,7 @@
                     </ul>
                 </article>
 
-                <article class="exp-card spotlight-card flex flex-col rounded-3xl border border-white/10 bg-ink p-8 lg:min-h-[60vh] lg:w-[min(32rem,40vw)] lg:shrink-0">
+                <article class="exp-card spotlight-card flex flex-col rounded-3xl border border-white/10 bg-ink p-8 lg:min-h-[60vh] lg:w-[min(32rem,40vw)] lg:shrink-0 lg:motion-reduce:min-h-0 lg:motion-reduce:w-auto">
                     <div class="mb-6 flex items-start justify-between">
                         <div class="exp-logo flex h-20 items-center overflow-hidden rounded-2xl bg-white px-3 py-1.5 shadow-lg shadow-black/30" data-initials="RA">
                             <img src="/images/companies/routart-logo.webp" alt="Logo Auto-École Rout'Art" width="600" height="271" class="h-full w-auto object-contain">
@@ -231,7 +232,7 @@
                     </ul>
                 </article>
 
-                <article class="exp-card spotlight-card flex flex-col rounded-3xl border border-white/10 bg-ink p-8 lg:min-h-[60vh] lg:w-[min(32rem,40vw)] lg:shrink-0">
+                <article class="exp-card spotlight-card flex flex-col rounded-3xl border border-white/10 bg-ink p-8 lg:min-h-[60vh] lg:w-[min(32rem,40vw)] lg:shrink-0 lg:motion-reduce:min-h-0 lg:motion-reduce:w-auto">
                     <div class="mb-6 flex items-start justify-between">
                         <div class="exp-logo grid size-16 place-items-center overflow-hidden rounded-2xl shadow-lg shadow-black/30" data-initials="PL">
                             <img src="/images/companies/pharmacie-laurain.webp" alt="Logo Giphar, Pharmacie Laurain" width="256" height="256" class="size-full object-cover">
