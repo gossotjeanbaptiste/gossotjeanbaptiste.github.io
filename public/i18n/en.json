@@ -140,5 +140,7 @@
   "project.lmagent.li3": "Application tracking in an Excel spreadsheet",
   "project.lmagent.li4": "Secure local web interface and 500+ tests",
   "exp2.li4": "Built MyCMS v1: a Python CMS with a CustomTkinter graphical interface",
-  "projects.enableTilt": "Enable 3D effect: tilt your phone"
+  "projects.enableTilt": "Enable 3D effect: tilt your phone",
+  "projects.disableTilt": "Disable 3D effect",
+  "projects.enableTiltShort": "Enable 3D effect"
 }

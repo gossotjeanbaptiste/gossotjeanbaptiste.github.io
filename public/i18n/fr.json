@@ -140,5 +140,7 @@
   "project.lmagent.li3": "Suivi des candidatures dans un tableau Excel",
   "project.lmagent.li4": "Interface web locale sécurisée et plus de 500 tests",
   "exp2.li4": "Création de la v1 de MyCMS : un CMS en Python avec une interface graphique CustomTkinter",
-  "projects.enableTilt": "Activer l'effet 3D : inclinez votre téléphone"
+  "projects.enableTilt": "Activer l'effet 3D : inclinez votre téléphone",
+  "projects.disableTilt": "Désactiver l'effet 3D",
+  "projects.enableTiltShort": "Activer l'effet 3D"
 }

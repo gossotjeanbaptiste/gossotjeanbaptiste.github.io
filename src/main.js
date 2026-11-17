@@ -398,25 +398,49 @@ function initDeviceTilt() {
     });
   };
 
-  const start = () => window.addEventListener('deviceorientation', onOrientation);
+  // --- Bouton activer / désactiver (choix mémorisé) ---
+  const btn = $('#tilt-permission');
+  const label = $('span', btn);
+  const needsPermission = typeof DeviceOrientationEvent.requestPermission === 'function';
+  let permitted = !needsPermission;
+  let active = false;
 
-  // iOS 13+ : permission obligatoire, demandée au tap sur le bouton
-  if (typeof DeviceOrientationEvent.requestPermission === 'function') {
-    const btn = $('#tilt-permission');
-    btn.classList.replace('hidden', 'inline-flex');
-    btn.addEventListener('click', async () => {
-      try {
-        if (await DeviceOrientationEvent.requestPermission() === 'granted') {
-          start();
-          gsap.to(btn, { autoAlpha: 0, height: 0, marginBottom: 0, paddingTop: 0, paddingBottom: 0, duration: 0.4, onComplete: () => { btn.style.display = 'none'; } });
-        }
-      } catch (err) {
-        console.warn('Orientation refusée', err);
-      }
-    });
-  } else {
-    start();
-  }
+  const setLabel = (key) => {
+    label.dataset.i18n = key; // applyTranslations() reprendra la bonne clé au changement de langue
+    const text = i18n.dict[i18n.lang]?.[key];
+    if (text) label.innerHTML = text;
+  };
+  const render = () => {
+    btn.setAttribute('aria-pressed', String(active));
+    setLabel(active ? 'projects.disableTilt' : permitted ? 'projects.enableTiltShort' : 'projects.enableTilt');
+  };
+  const start = () => {
+    active = true; base = null;
+    window.addEventListener('deviceorientation', onOrientation);
+    render();
+  };
+  const stop = () => {
+    active = false;
+    window.removeEventListener('deviceorientation', onOrientation);
+    cards.forEach(c => { c.rx(0); c.ry(0); c.glare.style.opacity = 0; });
+    render();
+  };
+
+  btn.classList.replace('hidden', 'inline-flex');
+  btn.addEventListener('click', async () => {
+    if (active) { stop(); safeSet('tilt', 'off'); return; }
+    if (!permitted) {
+      // iOS 13+ : l'accès aux capteurs doit être autorisé par un tap
+      try { permitted = await DeviceOrientationEvent.requestPermission() === 'granted'; }
+      catch (err) { console.warn('Orientation refusée', err); }
+      if (!permitted) return;
+    }
+    start(); safeSet('tilt', 'on');
+  });
+
+  // Android : actif par défaut, sauf si l'utilisateur l'a désactivé. iOS : attend le tap.
+  if (permitted && safeGet('tilt') !== 'off') start();
+  else render();
 }
 
 /* ============================================================
