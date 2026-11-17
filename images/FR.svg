@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="285" height="150" viewBox="0 0 285 150">
-  <!-- Bande bleue (Bleu France officiel) -->
-  <rect x="0" y="0" width="95" height="150" fill="#000091"/>
-  <!-- Bande blanche (Blanc officiel) -->
-  <rect x="95" y="0" width="95" height="150" fill="#FFFFFF"/>
-  <!-- Bande rouge (Rouge Marianne officiel) -->
-  <rect x="190" y="0" width="95" height="150" fill="#E1000F"/>
-</svg>
